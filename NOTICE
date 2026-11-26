@@ -1,0 +1,18 @@
+IntentRank is an independent project by Om Kesharwani.
+It is not affiliated with or endorsed by Wayfair.
+
+WANDS dataset and product text
+Source: https://github.com/wayfair/WANDS
+Copyright (c) 2021 ecir2022. Licensed under MIT.
+Full notice: docs/licenses/WANDS-MIT.txt
+Dataset paper: WANDS: Dataset for Product Search Relevance Assessment
+https://arxiv.org/abs/2203.09972
+
+Pretrained encoder and quantized ONNX export
+Original: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
+ONNX: https://huggingface.co/Xenova/all-MiniLM-L6-v2
+Apache License 2.0. Downloaded at a pinned revision by scripts/download.py.
+The encoder is not trained or fine-tuned by this project.
+
+Lucide icons are distributed under the ISC license.
+Interface category illustrations are original schematic artwork, not product photos.

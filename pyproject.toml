@@ -1,0 +1,12 @@
+[project]
+name = "intentrank"
+version = "1.0.0"
+description = "Reproducible product search relevance on Wayfair WANDS"
+requires-python = ">=3.12,<3.13"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.vercel]
+entrypoint = "app:app"

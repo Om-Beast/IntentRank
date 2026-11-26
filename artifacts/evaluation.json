@@ -1,0 +1,2596 @@
+{
+  "test_queries": 72,
+  "models": {
+    "bm25": {
+      "catalogue_ndcg10": {
+        "mean": 0.6689298291903846,
+        "ci95": [
+          0.5983354711533574,
+          0.7453780008101418
+        ]
+      },
+      "judged_pool_ndcg10": {
+        "mean": 0.7786683199938336,
+        "ci95": [
+          0.71682244545831,
+          0.8381762157210016
+        ]
+      },
+      "judged_at10": {
+        "mean": 0.8319444444444445,
+        "ci95": [
+          0.7736111111111111,
+          0.8861458333333332
+        ]
+      },
+      "recall100": {
+        "mean": 0.42521213700833205,
+        "ci95": [
+          0.3629168766423209,
+          0.4902573302466687
+        ]
+      }
+    },
+    "semantic": {
+      "catalogue_ndcg10": {
+        "mean": 0.6850939465619041,
+        "ci95": [
+          0.6160228836822795,
+          0.7553960289382378
+        ]
+      },
+      "judged_pool_ndcg10": {
+        "mean": 0.7689940887411388,
+        "ci95": [
+          0.7126880672521736,
+          0.8274588531227459
+        ]
+      },
+      "judged_at10": {
+        "mean": 0.8361111111111111,
+        "ci95": [
+          0.7680555555555555,
+          0.8972222222222221
+        ]
+      },
+      "recall100": {
+        "mean": 0.37112426354770534,
+        "ci95": [
+          0.31124314909375483,
+          0.4331296748984482
+        ]
+      }
+    },
+    "hybrid": {
+      "catalogue_ndcg10": {
+        "mean": 0.7275027158626948,
+        "ci95": [
+          0.6654422982038953,
+          0.7920082707147897
+        ]
+      },
+      "judged_pool_ndcg10": {
+        "mean": 0.7961193382361181,
+        "ci95": [
+          0.7388425531242412,
+          0.8528341072723256
+        ]
+      },
+      "judged_at10": {
+        "mean": 0.8805555555555555,
+        "ci95": [
+          0.8236111111111111,
+          0.9263888888888889
+        ]
+      },
+      "recall100": {
+        "mean": 0.42612145667069756,
+        "ci95": [
+          0.36467947555173424,
+          0.4910790499561572
+        ]
+      }
+    },
+    "learned": {
+      "catalogue_ndcg10": {
+        "mean": 0.6910478637019077,
+        "ci95": [
+          0.6229181810707649,
+          0.7627416064115965
+        ]
+      },
+      "judged_pool_ndcg10": {
+        "mean": 0.7994945956935291,
+        "ci95": [
+          0.7425817721253672,
+          0.8555388460374638
+        ]
+      },
+      "judged_at10": {
+        "mean": 0.8305555555555555,
+        "ci95": [
+          0.7666319444444445,
+          0.8861111111111111
+        ]
+      },
+      "recall100": {
+        "mean": 0.3663206494506739,
+        "ci95": [
+          0.3106074927090073,
+          0.4246844889018343
+        ]
+      }
+    }
+  },
+  "queries": [
+    {
+      "id": 1,
+      "query": "smart coffee table",
+      "judgments": 1436,
+      "relevant": 1418,
+      "candidate_recall": 0.12129760225669958,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 0.4260609020478963,
+          "judged_pool_ndcg10": 0.5255664792793981,
+          "judged_at10": 0.6,
+          "recall100": 0.054301833568406205
+        },
+        "semantic": {
+          "catalogue_ndcg10": 0.3649302102017378,
+          "judged_pool_ndcg10": 0.3649302102017378,
+          "judged_at10": 1.0,
+          "recall100": 0.0684062059238364
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 0.434112485669856,
+          "judged_pool_ndcg10": 0.434112485669856,
+          "judged_at10": 1.0,
+          "recall100": 0.05571227080394922
+        },
+        "learned": {
+          "catalogue_ndcg10": 0.44484632057266277,
+          "judged_pool_ndcg10": 0.5002289288634465,
+          "judged_at10": 0.7,
+          "recall100": 0.06417489421720733
+        }
+      }
+    },
+    {
+      "id": 6,
+      "query": "acrylic clear chair",
+      "judgments": 111,
+      "relevant": 99,
+      "candidate_recall": 0.36363636363636365,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 0.9216017310213247,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 0.9,
+          "recall100": 0.2828282828282828
+        },
+        "semantic": {
+          "catalogue_ndcg10": 0.8769836981178636,
+          "judged_pool_ndcg10": 0.9432379215722527,
+          "judged_at10": 0.9,
+          "recall100": 0.21212121212121213
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.25252525252525254
+        },
+        "learned": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.2727272727272727
+        }
+      }
+    },
+    {
+      "id": 14,
+      "query": "beds that have leds",
+      "judgments": 2692,
+      "relevant": 1571,
+      "candidate_recall": 0.07256524506683641,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 0.022084741151463014,
+          "judged_pool_ndcg10": 0.028381039213873666,
+          "judged_at10": 0.6,
+          "recall100": 0.015913430935709738
+        },
+        "semantic": {
+          "catalogue_ndcg10": 0.8379347378101539,
+          "judged_pool_ndcg10": 0.8379347378101539,
+          "judged_at10": 1.0,
+          "recall100": 0.056651814131126674
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 0.5357086937004183,
+          "judged_pool_ndcg10": 0.6578986223737447,
+          "judged_at10": 0.7,
+          "recall100": 0.03564608529598982
+        },
+        "learned": {
+          "catalogue_ndcg10": 0.3333333333333333,
+          "judged_pool_ndcg10": 0.3333333333333333,
+          "judged_at10": 1.0,
+          "recall100": 0.05919796308084023
+        }
+      }
+    },
+    {
+      "id": 15,
+      "query": "black 5 drawer dresser by guilford",
+      "judgments": 613,
+      "relevant": 598,
+      "candidate_recall": 0.2809364548494983,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 0.6797096927697376,
+          "judged_pool_ndcg10": 0.6797096927697376,
+          "judged_at10": 1.0,
+          "recall100": 0.15719063545150502
+        },
+        "semantic": {
+          "catalogue_ndcg10": 0.5821032065260975,
+          "judged_pool_ndcg10": 0.5821032065260975,
+          "judged_at10": 1.0,
+          "recall100": 0.14715719063545152
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 0.8383354523103075,
+          "judged_pool_ndcg10": 0.8383354523103075,
+          "judged_at10": 1.0,
+          "recall100": 0.16387959866220736
+        },
+        "learned": {
+          "catalogue_ndcg10": 0.799768656391611,
+          "judged_pool_ndcg10": 0.799768656391611,
+          "judged_at10": 1.0,
+          "recall100": 0.1505016722408027
+        }
+      }
+    },
+    {
+      "id": 16,
+      "query": "blk 18x18 seat cushions",
+      "judgments": 493,
+      "relevant": 266,
+      "candidate_recall": 0.22932330827067668,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 0.6812695579405349,
+          "judged_pool_ndcg10": 0.8074483267440765,
+          "judged_at10": 0.7,
+          "recall100": 0.19172932330827067
+        },
+        "semantic": {
+          "catalogue_ndcg10": 0.06526788426294017,
+          "judged_pool_ndcg10": 0.5298241244530194,
+          "judged_at10": 0.1,
+          "recall100": 0.06015037593984962
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 0.4322934789556161,
+          "judged_pool_ndcg10": 0.653503049187153,
+          "judged_at10": 0.5,
+          "recall100": 0.14661654135338345
+        },
+        "learned": {
+          "catalogue_ndcg10": 0.3675554499392686,
+          "judged_pool_ndcg10": 0.6005540286277393,
+          "judged_at10": 0.5,
+          "recall100": 0.13533834586466165
+        }
+      }
+    },
+    {
+      "id": 17,
+      "query": "closet storage with zipper",
+      "judgments": 103,
+      "relevant": 103,
+      "candidate_recall": 0.7378640776699029,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 0.41294429237834673,
+          "judged_pool_ndcg10": 0.6592194812166503,
+          "judged_at10": 0.6,
+          "recall100": 0.5728155339805825
+        },
+        "semantic": {
+          "catalogue_ndcg10": 0.8502244159847391,
+          "judged_pool_ndcg10": 0.8502244159847391,
+          "judged_at10": 1.0,
+          "recall100": 0.5339805825242718
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 0.7848489159684606,
+          "judged_pool_ndcg10": 0.7848489159684606,
+          "judged_at10": 1.0,
+          "recall100": 0.6213592233009708
+        },
+        "learned": {
+          "catalogue_ndcg10": 0.5750338134581173,
+          "judged_pool_ndcg10": 0.7680587924239461,
+          "judged_at10": 0.7,
+          "recall100": 0.44660194174757284
+        }
+      }
+    },
+    {
+      "id": 22,
+      "query": "light and navy blue decorative pillow",
+      "judgments": 251,
+      "relevant": 196,
+      "candidate_recall": 0.46938775510204084,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 0.4679410938265454,
+          "judged_pool_ndcg10": 0.6865988399750619,
+          "judged_at10": 0.6,
+          "recall100": 0.19387755102040816
+        },
+        "semantic": {
+          "catalogue_ndcg10": 0.28599364760745766,
+          "judged_pool_ndcg10": 0.3072005770071082,
+          "judged_at10": 0.9,
+          "recall100": 0.32653061224489793
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 0.2870458520421485,
+          "judged_pool_ndcg10": 0.2870458520421485,
+          "judged_at10": 1.0,
+          "recall100": 0.2857142857142857
+        },
+        "learned": {
+          "catalogue_ndcg10": 0.304266277145995,
+          "judged_pool_ndcg10": 0.531062264504017,
+          "judged_at10": 0.6,
+          "recall100": 0.29081632653061223
+        }
+      }
+    },
+    {
+      "id": 23,
+      "query": "stoneford end tables white and wood",
+      "judgments": 1267,
+      "relevant": 1228,
+      "candidate_recall": 0.14169381107491857,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.07899022801302931
+        },
+        "semantic": {
+          "catalogue_ndcg10": 0.823699893396571,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 0.8,
+          "recall100": 0.0749185667752443
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.07654723127035831
+        },
+        "learned": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.07573289902280131
+        }
+      }
+    },
+    {
+      "id": 31,
+      "query": "burnt orange curtains",
+      "judgments": 168,
+      "relevant": 168,
+      "candidate_recall": 0.5,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 0.5125679533650936,
+          "judged_pool_ndcg10": 0.8259896754927477,
+          "judged_at10": 0.6,
+          "recall100": 0.375
+        },
+        "semantic": {
+          "catalogue_ndcg10": 0.20023979226763355,
+          "judged_pool_ndcg10": 0.6943559465628248,
+          "judged_at10": 0.4,
+          "recall100": 0.19642857142857142
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 0.6483519325223678,
+          "judged_pool_ndcg10": 0.6943559465628248,
+          "judged_at10": 0.9,
+          "recall100": 0.2619047619047619
+        },
+        "learned": {
+          "catalogue_ndcg10": 0.36279792468536937,
+          "judged_pool_ndcg10": 0.6943559465628248,
+          "judged_at10": 0.4,
+          "recall100": 0.22023809523809523
+        }
+      }
+    },
+    {
+      "id": 34,
+      "query": "bar stool with backrest",
+      "judgments": 740,
+      "relevant": 735,
+      "candidate_recall": 0.2054421768707483,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 0.6681222306365405,
+          "judged_pool_ndcg10": 0.8043628744017065,
+          "judged_at10": 0.9,
+          "recall100": 0.11564625850340136
+        },
+        "semantic": {
+          "catalogue_ndcg10": 0.911298659909514,
+          "judged_pool_ndcg10": 0.911298659909514,
+          "judged_at10": 1.0,
+          "recall100": 0.10884353741496598
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 0.765081298343118,
+          "judged_pool_ndcg10": 0.8463507934928552,
+          "judged_at10": 0.9,
+          "recall100": 0.11156462585034013
+        },
+        "learned": {
+          "catalogue_ndcg10": 0.5005962147771917,
+          "judged_pool_ndcg10": 0.9368077570869662,
+          "judged_at10": 0.4,
+          "recall100": 0.10340136054421768
+        }
+      }
+    },
+    {
+      "id": 35,
+      "query": "enclosed shoe rack",
+      "judgments": 174,
+      "relevant": 172,
+      "candidate_recall": 0.5523255813953488,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 0.38559884598578353,
+          "judged_pool_ndcg10": 0.38559884598578353,
+          "judged_at10": 1.0,
+          "recall100": 0.5058139534883721
+        },
+        "semantic": {
+          "catalogue_ndcg10": 0.3217231893184328,
+          "judged_pool_ndcg10": 0.3965255762463672,
+          "judged_at10": 0.8,
+          "recall100": 0.45348837209302323
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 0.3775028156362593,
+          "judged_pool_ndcg10": 0.3775028156362593,
+          "judged_at10": 1.0,
+          "recall100": 0.4941860465116279
+        },
+        "learned": {
+          "catalogue_ndcg10": 0.3333333333333333,
+          "judged_pool_ndcg10": 0.3333333333333333,
+          "judged_at10": 1.0,
+          "recall100": 0.47093023255813954
+        }
+      }
+    },
+    {
+      "id": 36,
+      "query": "laundry basket with wheels",
+      "judgments": 157,
+      "relevant": 156,
+      "candidate_recall": 0.5641025641025641,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 0.841492960259019,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 0.8,
+          "recall100": 0.5064102564102564
+        },
+        "semantic": {
+          "catalogue_ndcg10": 0.6725980011998077,
+          "judged_pool_ndcg10": 0.9053206285482487,
+          "judged_at10": 0.7,
+          "recall100": 0.38461538461538464
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 0.8130353736609366,
+          "judged_pool_ndcg10": 0.9510907186004267,
+          "judged_at10": 0.8,
+          "recall100": 0.4551282051282051
+        },
+        "learned": {
+          "catalogue_ndcg10": 0.6927609676105795,
+          "judged_pool_ndcg10": 0.9368077570869662,
+          "judged_at10": 0.7,
+          "recall100": 0.42948717948717946
+        }
+      }
+    },
+    {
+      "id": 41,
+      "query": "closet pull out valet rod",
+      "judgments": 143,
+      "relevant": 80,
+      "candidate_recall": 0.625,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 0.6901550427115339,
+          "judged_pool_ndcg10": 0.6901550427115339,
+          "judged_at10": 1.0,
+          "recall100": 0.6125
+        },
+        "semantic": {
+          "catalogue_ndcg10": 0.8546557236450505,
+          "judged_pool_ndcg10": 0.8546557236450505,
+          "judged_at10": 1.0,
+          "recall100": 0.4625
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 0.7729914144099592,
+          "judged_pool_ndcg10": 0.7729914144099592,
+          "judged_at10": 1.0,
+          "recall100": 0.5875
+        },
+        "learned": {
+          "catalogue_ndcg10": 0.535861797760324,
+          "judged_pool_ndcg10": 0.535861797760324,
+          "judged_at10": 1.0,
+          "recall100": 0.475
+        }
+      }
+    },
+    {
+      "id": 42,
+      "query": "toddler couch fold out",
+      "judgments": 149,
+      "relevant": 75,
+      "candidate_recall": 0.4666666666666667,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 0.25208810885735705,
+          "judged_pool_ndcg10": 0.5640741199581238,
+          "judged_at10": 0.4,
+          "recall100": 0.17333333333333334
+        },
+        "semantic": {
+          "catalogue_ndcg10": 0.5349235609962976,
+          "judged_pool_ndcg10": 0.5969021808827255,
+          "judged_at10": 0.9,
+          "recall100": 0.4266666666666667
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 0.4191661850625739,
+          "judged_pool_ndcg10": 0.652641002375597,
+          "judged_at10": 0.6,
+          "recall100": 0.41333333333333333
+        },
+        "learned": {
+          "catalogue_ndcg10": 0.40378522920659876,
+          "judged_pool_ndcg10": 0.5451623409976973,
+          "judged_at10": 0.5,
+          "recall100": 0.22666666666666666
+        }
+      }
+    },
+    {
+      "id": 43,
+      "query": "solid teak end table",
+      "judgments": 1231,
+      "relevant": 1051,
+      "candidate_recall": 0.120837297811608,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 0.955830517697074,
+          "judged_pool_ndcg10": 0.955830517697074,
+          "judged_at10": 1.0,
+          "recall100": 0.05042816365366318
+        },
+        "semantic": {
+          "catalogue_ndcg10": 0.8379347378101539,
+          "judged_pool_ndcg10": 0.8379347378101539,
+          "judged_at10": 1.0,
+          "recall100": 0.0922930542340628
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.07706945765937202
+        },
+        "learned": {
+          "catalogue_ndcg10": 0.9537125187088151,
+          "judged_pool_ndcg10": 0.9537125187088151,
+          "judged_at10": 1.0,
+          "recall100": 0.08277830637488107
+        }
+      }
+    },
+    {
+      "id": 49,
+      "query": "moen matte black hooks",
+      "judgments": 135,
+      "relevant": 116,
+      "candidate_recall": 0.20689655172413793,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 0.7467045958894682,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 0.7,
+          "recall100": 0.1896551724137931
+        },
+        "semantic": {
+          "catalogue_ndcg10": 0.46900009332067494,
+          "judged_pool_ndcg10": 0.9148568823583791,
+          "judged_at10": 0.3,
+          "recall100": 0.05172413793103448
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 0.5321408435198609,
+          "judged_pool_ndcg10": 0.9148568823583791,
+          "judged_at10": 0.4,
+          "recall100": 0.1724137931034483
+        },
+        "learned": {
+          "catalogue_ndcg10": 0.8454256604216018,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 0.8,
+          "recall100": 0.1724137931034483
+        }
+      }
+    },
+    {
+      "id": 57,
+      "query": "jordanna solid wood rocking",
+      "judgments": 1406,
+      "relevant": 190,
+      "candidate_recall": 0.4368421052631579,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.41578947368421054
+        },
+        "semantic": {
+          "catalogue_ndcg10": 0.5175857101991203,
+          "judged_pool_ndcg10": 0.5175857101991203,
+          "judged_at10": 0.7,
+          "recall100": 0.042105263157894736
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 0.7781188158783611,
+          "judged_pool_ndcg10": 0.831536849440539,
+          "judged_at10": 0.9,
+          "recall100": 0.2578947368421053
+        },
+        "learned": {
+          "catalogue_ndcg10": 0.9235889866407062,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 0.9,
+          "recall100": 0.2631578947368421
+        }
+      }
+    },
+    {
+      "id": 76,
+      "query": "46 inch closet door",
+      "judgments": 135,
+      "relevant": 55,
+      "candidate_recall": 0.7454545454545455,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 0.17081049256008582,
+          "judged_pool_ndcg10": 0.24242965213802503,
+          "judged_at10": 0.7,
+          "recall100": 0.7090909090909091
+        },
+        "semantic": {
+          "catalogue_ndcg10": 0.16853225981452813,
+          "judged_pool_ndcg10": 0.3887438241775329,
+          "judged_at10": 0.2,
+          "recall100": 0.4
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 0.33568104860560033,
+          "judged_pool_ndcg10": 0.33568104860560033,
+          "judged_at10": 1.0,
+          "recall100": 0.5272727272727272
+        },
+        "learned": {
+          "catalogue_ndcg10": 0.23487955863552573,
+          "judged_pool_ndcg10": 0.3637333660241454,
+          "judged_at10": 0.8,
+          "recall100": 0.4909090909090909
+        }
+      }
+    },
+    {
+      "id": 97,
+      "query": "regner power loom red",
+      "judgments": 197,
+      "relevant": 196,
+      "candidate_recall": 0.6683673469387755,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.5102040816326531
+        },
+        "semantic": {
+          "catalogue_ndcg10": 0.7827068917847372,
+          "judged_pool_ndcg10": 0.7827068917847372,
+          "judged_at10": 1.0,
+          "recall100": 0.4489795918367347
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 0.8871958738785231,
+          "judged_pool_ndcg10": 0.8871958738785231,
+          "judged_at10": 1.0,
+          "recall100": 0.5
+        },
+        "learned": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.4642857142857143
+        }
+      }
+    },
+    {
+      "id": 102,
+      "query": "flamingo",
+      "judgments": 68,
+      "relevant": 57,
+      "candidate_recall": 1.0,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 0.933745776545611,
+          "judged_pool_ndcg10": 0.933745776545611,
+          "judged_at10": 1.0,
+          "recall100": 1.0
+        },
+        "semantic": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.9824561403508771
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 1.0
+        },
+        "learned": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 1.0
+        }
+      }
+    },
+    {
+      "id": 105,
+      "query": "outdoor movie screen",
+      "judgments": 149,
+      "relevant": 136,
+      "candidate_recall": 0.7941176470588235,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.5661764705882353
+        },
+        "semantic": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.6764705882352942
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.6397058823529411
+        },
+        "learned": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.7132352941176471
+        }
+      }
+    },
+    {
+      "id": 109,
+      "query": "hillsby oriental rug",
+      "judgments": 247,
+      "relevant": 247,
+      "candidate_recall": 0.4817813765182186,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.4008097165991903
+        },
+        "semantic": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.2550607287449393
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.3481781376518219
+        },
+        "learned": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.2631578947368421
+        }
+      }
+    },
+    {
+      "id": 110,
+      "query": "mila task chair",
+      "judgments": 348,
+      "relevant": 347,
+      "candidate_recall": 0.4697406340057637,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 0.6410457898283654,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 0.8,
+          "recall100": 0.2824207492795389
+        },
+        "semantic": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.24495677233429394
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.27089337175792505
+        },
+        "learned": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.2507204610951009
+        }
+      }
+    },
+    {
+      "id": 113,
+      "query": "led light strip",
+      "judgments": 432,
+      "relevant": 378,
+      "candidate_recall": 0.2619047619047619,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.21164021164021163
+        },
+        "semantic": {
+          "catalogue_ndcg10": 0.9510907186004267,
+          "judged_pool_ndcg10": 0.9510907186004267,
+          "judged_at10": 1.0,
+          "recall100": 0.23544973544973544
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 0.9477344873475498,
+          "judged_pool_ndcg10": 0.9477344873475498,
+          "judged_at10": 1.0,
+          "recall100": 0.23544973544973544
+        },
+        "learned": {
+          "catalogue_ndcg10": 0.9368077570869662,
+          "judged_pool_ndcg10": 0.9368077570869662,
+          "judged_at10": 1.0,
+          "recall100": 0.23809523809523808
+        }
+      }
+    },
+    {
+      "id": 122,
+      "query": "king size bed",
+      "judgments": 448,
+      "relevant": 420,
+      "candidate_recall": 0.18333333333333332,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 0.5305455297539708,
+          "judged_pool_ndcg10": 0.7104770117651426,
+          "judged_at10": 0.7,
+          "recall100": 0.08095238095238096
+        },
+        "semantic": {
+          "catalogue_ndcg10": 0.9537125187088151,
+          "judged_pool_ndcg10": 0.9537125187088151,
+          "judged_at10": 1.0,
+          "recall100": 0.14047619047619048
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 0.92663607790064,
+          "judged_pool_ndcg10": 0.92663607790064,
+          "judged_at10": 1.0,
+          "recall100": 0.12380952380952381
+        },
+        "learned": {
+          "catalogue_ndcg10": 0.7859162856301585,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 0.7,
+          "recall100": 0.07142857142857142
+        }
+      }
+    },
+    {
+      "id": 129,
+      "query": "wainscoting ideas",
+      "judgments": 185,
+      "relevant": 95,
+      "candidate_recall": 0.25263157894736843,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 0.49020702272032535,
+          "judged_pool_ndcg10": 0.5122917638717883,
+          "judged_at10": 0.9,
+          "recall100": 0.05263157894736842
+        },
+        "semantic": {
+          "catalogue_ndcg10": 0.8454256604216018,
+          "judged_pool_ndcg10": 0.933745776545611,
+          "judged_at10": 0.8,
+          "recall100": 0.23157894736842105
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 0.6168295842361273,
+          "judged_pool_ndcg10": 0.6937613565160449,
+          "judged_at10": 0.8,
+          "recall100": 0.25263157894736843
+        },
+        "learned": {
+          "catalogue_ndcg10": 0.3589542101716347,
+          "judged_pool_ndcg10": 0.8899541168509599,
+          "judged_at10": 0.2,
+          "recall100": 0.021052631578947368
+        }
+      }
+    },
+    {
+      "id": 136,
+      "query": "black fluffy stool",
+      "judgments": 166,
+      "relevant": 165,
+      "candidate_recall": 0.21818181818181817,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 0.0,
+          "judged_pool_ndcg10": 0.8611375561264456,
+          "judged_at10": 0.0,
+          "recall100": 0.09090909090909091
+        },
+        "semantic": {
+          "catalogue_ndcg10": 0.668306326910793,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 0.6,
+          "recall100": 0.1393939393939394
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 0.45953262310069537,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 0.4,
+          "recall100": 0.11515151515151516
+        },
+        "learned": {
+          "catalogue_ndcg10": 0.7084409501232901,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 0.6,
+          "recall100": 0.17575757575757575
+        }
+      }
+    },
+    {
+      "id": 138,
+      "query": "glass doors for bath",
+      "judgments": 172,
+      "relevant": 153,
+      "candidate_recall": 0.6274509803921569,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.2875816993464052
+        },
+        "semantic": {
+          "catalogue_ndcg10": 0.7110355857531127,
+          "judged_pool_ndcg10": 0.7498752722774765,
+          "judged_at10": 0.9,
+          "recall100": 0.5555555555555556
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.42483660130718953
+        },
+        "learned": {
+          "catalogue_ndcg10": 0.8701249883466592,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 0.8,
+          "recall100": 0.5163398692810458
+        }
+      }
+    },
+    {
+      "id": 140,
+      "query": "wire basket with dividers",
+      "judgments": 131,
+      "relevant": 125,
+      "candidate_recall": 0.76,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 0.4413557405529951,
+          "judged_pool_ndcg10": 0.47554264306780386,
+          "judged_at10": 0.9,
+          "recall100": 0.744
+        },
+        "semantic": {
+          "catalogue_ndcg10": 0.7350116588040563,
+          "judged_pool_ndcg10": 0.7350116588040563,
+          "judged_at10": 1.0,
+          "recall100": 0.664
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 0.5969021808827255,
+          "judged_pool_ndcg10": 0.5969021808827255,
+          "judged_at10": 1.0,
+          "recall100": 0.704
+        },
+        "learned": {
+          "catalogue_ndcg10": 0.603862808347509,
+          "judged_pool_ndcg10": 0.603862808347509,
+          "judged_at10": 1.0,
+          "recall100": 0.672
+        }
+      }
+    },
+    {
+      "id": 142,
+      "query": "kitchen wooden stand",
+      "judgments": 203,
+      "relevant": 75,
+      "candidate_recall": 0.25333333333333335,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 0.2535990660530941,
+          "judged_pool_ndcg10": 0.38240315749556364,
+          "judged_at10": 0.6,
+          "recall100": 0.10666666666666667
+        },
+        "semantic": {
+          "catalogue_ndcg10": 0.0,
+          "judged_pool_ndcg10": 0.2899438811797904,
+          "judged_at10": 0.0,
+          "recall100": 0.18666666666666668
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 0.37228687854532033,
+          "judged_pool_ndcg10": 0.4671221724996205,
+          "judged_at10": 0.5,
+          "recall100": 0.16
+        },
+        "learned": {
+          "catalogue_ndcg10": 0.25959718857040825,
+          "judged_pool_ndcg10": 0.5655735358146146,
+          "judged_at10": 0.4,
+          "recall100": 0.18666666666666668
+        }
+      }
+    },
+    {
+      "id": 163,
+      "query": "dual monitor stand",
+      "judgments": 96,
+      "relevant": 93,
+      "candidate_recall": 0.7849462365591398,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 0.8738066996354754,
+          "judged_pool_ndcg10": 0.9432379215722527,
+          "judged_at10": 0.9,
+          "recall100": 0.7741935483870968
+        },
+        "semantic": {
+          "catalogue_ndcg10": 0.9074250374176304,
+          "judged_pool_ndcg10": 0.9074250374176304,
+          "judged_at10": 1.0,
+          "recall100": 0.7849462365591398
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.7849462365591398
+        },
+        "learned": {
+          "catalogue_ndcg10": 0.9510907186004267,
+          "judged_pool_ndcg10": 0.9510907186004267,
+          "judged_at10": 1.0,
+          "recall100": 0.6129032258064516
+        }
+      }
+    },
+    {
+      "id": 166,
+      "query": "feather wall art",
+      "judgments": 112,
+      "relevant": 109,
+      "candidate_recall": 0.47706422018348627,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 0.9510907186004267,
+          "judged_pool_ndcg10": 0.9510907186004267,
+          "judged_at10": 1.0,
+          "recall100": 0.41284403669724773
+        },
+        "semantic": {
+          "catalogue_ndcg10": 0.8147909971645615,
+          "judged_pool_ndcg10": 0.9537125187088151,
+          "judged_at10": 0.8,
+          "recall100": 0.29357798165137616
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 0.9575861412006988,
+          "judged_pool_ndcg10": 0.9575861412006988,
+          "judged_at10": 1.0,
+          "recall100": 0.3486238532110092
+        },
+        "learned": {
+          "catalogue_ndcg10": 0.5779050396291793,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 0.6,
+          "recall100": 0.30275229357798167
+        }
+      }
+    },
+    {
+      "id": 170,
+      "query": "zen",
+      "judgments": 128,
+      "relevant": 100,
+      "candidate_recall": 0.96,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 0.9305687780632227,
+          "judged_pool_ndcg10": 0.9305687780632227,
+          "judged_at10": 1.0,
+          "recall100": 0.89
+        },
+        "semantic": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.79
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 0.9305687780632227,
+          "judged_pool_ndcg10": 0.9305687780632227,
+          "judged_at10": 1.0,
+          "recall100": 0.84
+        },
+        "learned": {
+          "catalogue_ndcg10": 0.9216017310213247,
+          "judged_pool_ndcg10": 0.9216017310213247,
+          "judged_at10": 1.0,
+          "recall100": 0.91
+        }
+      }
+    },
+    {
+      "id": 178,
+      "query": "almost heaven sauna",
+      "judgments": 74,
+      "relevant": 53,
+      "candidate_recall": 1.0,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 0.33906523108295444,
+          "judged_pool_ndcg10": 0.33906523108295444,
+          "judged_at10": 1.0,
+          "recall100": 1.0
+        },
+        "semantic": {
+          "catalogue_ndcg10": 0.4066972554326934,
+          "judged_pool_ndcg10": 0.4066972554326934,
+          "judged_at10": 1.0,
+          "recall100": 1.0
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 0.42590829591570295,
+          "judged_pool_ndcg10": 0.42590829591570295,
+          "judged_at10": 1.0,
+          "recall100": 1.0
+        },
+        "learned": {
+          "catalogue_ndcg10": 0.4066972554326934,
+          "judged_pool_ndcg10": 0.4066972554326934,
+          "judged_at10": 1.0,
+          "recall100": 0.8679245283018868
+        }
+      }
+    },
+    {
+      "id": 185,
+      "query": "lunch bag",
+      "judgments": 124,
+      "relevant": 46,
+      "candidate_recall": 0.9347826086956522,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.8913043478260869
+        },
+        "semantic": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.8043478260869565
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.8478260869565217
+        },
+        "learned": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.782608695652174
+        }
+      }
+    },
+    {
+      "id": 195,
+      "query": "black freestanding tub  with faucet",
+      "judgments": 110,
+      "relevant": 102,
+      "candidate_recall": 0.8627450980392157,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 0.613816622381599,
+          "judged_pool_ndcg10": 0.613816622381599,
+          "judged_at10": 1.0,
+          "recall100": 0.5
+        },
+        "semantic": {
+          "catalogue_ndcg10": 0.5159958223394444,
+          "judged_pool_ndcg10": 0.5159958223394444,
+          "judged_at10": 1.0,
+          "recall100": 0.6568627450980392
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 0.584369627369062,
+          "judged_pool_ndcg10": 0.584369627369062,
+          "judged_at10": 1.0,
+          "recall100": 0.7745098039215687
+        },
+        "learned": {
+          "catalogue_ndcg10": 0.6593007041766438,
+          "judged_pool_ndcg10": 0.6593007041766438,
+          "judged_at10": 1.0,
+          "recall100": 0.6176470588235294
+        }
+      }
+    },
+    {
+      "id": 199,
+      "query": "blue faux throw with pillows",
+      "judgments": 384,
+      "relevant": 373,
+      "candidate_recall": 0.3646112600536193,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.24396782841823056
+        },
+        "semantic": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.2225201072386059
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.24664879356568364
+        },
+        "learned": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.23324396782841822
+        }
+      }
+    },
+    {
+      "id": 200,
+      "query": "ceramic tile sea shell",
+      "judgments": 248,
+      "relevant": 244,
+      "candidate_recall": 0.45901639344262296,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 0.5816430170247698,
+          "judged_pool_ndcg10": 0.6888276805996029,
+          "judged_at10": 0.8,
+          "recall100": 0.30327868852459017
+        },
+        "semantic": {
+          "catalogue_ndcg10": 0.984254368101036,
+          "judged_pool_ndcg10": 0.984254368101036,
+          "judged_at10": 1.0,
+          "recall100": 0.3114754098360656
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 0.9514263071764342,
+          "judged_pool_ndcg10": 0.984254368101036,
+          "judged_at10": 0.9,
+          "recall100": 0.28688524590163933
+        },
+        "learned": {
+          "catalogue_ndcg10": 0.7794238198714823,
+          "judged_pool_ndcg10": 0.7824219794061805,
+          "judged_at10": 0.9,
+          "recall100": 0.3155737704918033
+        }
+      }
+    },
+    {
+      "id": 213,
+      "query": "kraus kitchen sink faucet oletto kpf 2820 sfs",
+      "judgments": 491,
+      "relevant": 139,
+      "candidate_recall": 0.5035971223021583,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 0.4329684610382273,
+          "judged_pool_ndcg10": 0.317789548585336,
+          "judged_at10": 0.9,
+          "recall100": 0.4316546762589928
+        },
+        "semantic": {
+          "catalogue_ndcg10": 0.2979766981608318,
+          "judged_pool_ndcg10": 0.2912114951989254,
+          "judged_at10": 0.8,
+          "recall100": 0.302158273381295
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 0.42609332204176276,
+          "judged_pool_ndcg10": 0.3800893080013055,
+          "judged_at10": 0.8,
+          "recall100": 0.35251798561151076
+        },
+        "learned": {
+          "catalogue_ndcg10": 0.45518337912525003,
+          "judged_pool_ndcg10": 0.4529774113367827,
+          "judged_at10": 0.8,
+          "recall100": 0.33093525179856115
+        }
+      }
+    },
+    {
+      "id": 218,
+      "query": "wand bunk beds",
+      "judgments": 65,
+      "relevant": 65,
+      "candidate_recall": 0.49230769230769234,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 0.28744763646920174,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 0.4,
+          "recall100": 0.4461538461538462
+        },
+        "semantic": {
+          "catalogue_ndcg10": 0.35895421017163476,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 0.2,
+          "recall100": 0.13846153846153847
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 0.4615890699208637,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 0.5,
+          "recall100": 0.3230769230769231
+        },
+        "learned": {
+          "catalogue_ndcg10": 0.06943122193677728,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 0.1,
+          "recall100": 0.23076923076923078
+        }
+      }
+    },
+    {
+      "id": 243,
+      "query": "indoor multi tiered plant stand",
+      "judgments": 211,
+      "relevant": 195,
+      "candidate_recall": 0.6102564102564103,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 0.914856882358379,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 0.9,
+          "recall100": 0.5076923076923077
+        },
+        "semantic": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.4512820512820513
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 0.933745776545611,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 0.9,
+          "recall100": 0.47692307692307695
+        },
+        "learned": {
+          "catalogue_ndcg10": 0.914856882358379,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 0.9,
+          "recall100": 0.48205128205128206
+        }
+      }
+    },
+    {
+      "id": 246,
+      "query": "clear shower curtain",
+      "judgments": 254,
+      "relevant": 126,
+      "candidate_recall": 0.7301587301587301,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 0.6087519422192817,
+          "judged_pool_ndcg10": 0.6087519422192817,
+          "judged_at10": 1.0,
+          "recall100": 0.35714285714285715
+        },
+        "semantic": {
+          "catalogue_ndcg10": 0.6655266239440208,
+          "judged_pool_ndcg10": 0.6655266239440208,
+          "judged_at10": 1.0,
+          "recall100": 0.5873015873015873
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 0.7448559741076546,
+          "judged_pool_ndcg10": 0.7448559741076546,
+          "judged_at10": 1.0,
+          "recall100": 0.5396825396825397
+        },
+        "learned": {
+          "catalogue_ndcg10": 0.5789170894259248,
+          "judged_pool_ndcg10": 0.5789170894259248,
+          "judged_at10": 1.0,
+          "recall100": 0.48412698412698413
+        }
+      }
+    },
+    {
+      "id": 273,
+      "query": "stainless steel free standing shower caddy",
+      "judgments": 542,
+      "relevant": 92,
+      "candidate_recall": 0.6521739130434783,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 0.7421804424811365,
+          "judged_pool_ndcg10": 0.7421804424811365,
+          "judged_at10": 1.0,
+          "recall100": 0.6521739130434783
+        },
+        "semantic": {
+          "catalogue_ndcg10": 0.7569501982453215,
+          "judged_pool_ndcg10": 0.7569501982453215,
+          "judged_at10": 1.0,
+          "recall100": 0.6304347826086957
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 0.7040011776859079,
+          "judged_pool_ndcg10": 0.7040011776859079,
+          "judged_at10": 1.0,
+          "recall100": 0.6413043478260869
+        },
+        "learned": {
+          "catalogue_ndcg10": 0.5591227842996137,
+          "judged_pool_ndcg10": 0.5591227842996137,
+          "judged_at10": 1.0,
+          "recall100": 0.6304347826086957
+        }
+      }
+    },
+    {
+      "id": 278,
+      "query": "parakeet toy",
+      "judgments": 112,
+      "relevant": 77,
+      "candidate_recall": 0.9090909090909091,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 0.41232158103583894,
+          "judged_pool_ndcg10": 0.41232158103583894,
+          "judged_at10": 1.0,
+          "recall100": 0.7272727272727273
+        },
+        "semantic": {
+          "catalogue_ndcg10": 0.5281524923941286,
+          "judged_pool_ndcg10": 0.5536212941849071,
+          "judged_at10": 0.9,
+          "recall100": 0.6493506493506493
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 0.4911705278921376,
+          "judged_pool_ndcg10": 0.4911705278921376,
+          "judged_at10": 1.0,
+          "recall100": 0.7402597402597403
+        },
+        "learned": {
+          "catalogue_ndcg10": 0.4377903828266175,
+          "judged_pool_ndcg10": 0.4377903828266175,
+          "judged_at10": 1.0,
+          "recall100": 0.38961038961038963
+        }
+      }
+    },
+    {
+      "id": 281,
+      "query": "brunk ship wheel",
+      "judgments": 90,
+      "relevant": 51,
+      "candidate_recall": 1.0,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 1.0
+        },
+        "semantic": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.7450980392156863
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 1.0
+        },
+        "learned": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.45098039215686275
+        }
+      }
+    },
+    {
+      "id": 285,
+      "query": "48\" sliding single track , barn door for laundry",
+      "judgments": 183,
+      "relevant": 115,
+      "candidate_recall": 0.7739130434782608,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 0.24642456448367236,
+          "judged_pool_ndcg10": 0.38441023776109734,
+          "judged_at10": 0.8,
+          "recall100": 0.6869565217391305
+        },
+        "semantic": {
+          "catalogue_ndcg10": 0.41333390050851004,
+          "judged_pool_ndcg10": 0.4377903828266175,
+          "judged_at10": 0.9,
+          "recall100": 0.5043478260869565
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 0.2945924750112927,
+          "judged_pool_ndcg10": 0.38441023776109734,
+          "judged_at10": 0.8,
+          "recall100": 0.6086956521739131
+        },
+        "learned": {
+          "catalogue_ndcg10": 0.33103009269557726,
+          "judged_pool_ndcg10": 0.38441023776109734,
+          "judged_at10": 0.9,
+          "recall100": 0.5739130434782609
+        }
+      }
+    },
+    {
+      "id": 292,
+      "query": "decorative white pillow",
+      "judgments": 204,
+      "relevant": 146,
+      "candidate_recall": 0.5342465753424658,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 0.20714052637975147,
+          "judged_pool_ndcg10": 0.3939512605354377,
+          "judged_at10": 0.3,
+          "recall100": 0.273972602739726
+        },
+        "semantic": {
+          "catalogue_ndcg10": 0.23230598994003915,
+          "judged_pool_ndcg10": 0.3072005770071082,
+          "judged_at10": 0.8,
+          "recall100": 0.3219178082191781
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 0.15345286871233296,
+          "judged_pool_ndcg10": 0.20224053345123122,
+          "judged_at10": 0.8,
+          "recall100": 0.273972602739726
+        },
+        "learned": {
+          "catalogue_ndcg10": 0.08939796409998146,
+          "judged_pool_ndcg10": 0.26452802258830366,
+          "judged_at10": 0.3,
+          "recall100": 0.2534246575342466
+        }
+      }
+    },
+    {
+      "id": 293,
+      "query": "wood floor protector mat",
+      "judgments": 106,
+      "relevant": 74,
+      "candidate_recall": 0.7972972972972973,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 0.42772299709002704,
+          "judged_pool_ndcg10": 0.45298473672387823,
+          "judged_at10": 0.9,
+          "recall100": 0.7027027027027027
+        },
+        "semantic": {
+          "catalogue_ndcg10": 0.6859758966916486,
+          "judged_pool_ndcg10": 0.6859758966916486,
+          "judged_at10": 1.0,
+          "recall100": 0.5675675675675675
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 0.5147934117931416,
+          "judged_pool_ndcg10": 0.5864017103888768,
+          "judged_at10": 0.9,
+          "recall100": 0.7567567567567568
+        },
+        "learned": {
+          "catalogue_ndcg10": 0.527059975094682,
+          "judged_pool_ndcg10": 0.5710642923977509,
+          "judged_at10": 0.9,
+          "recall100": 0.3783783783783784
+        }
+      }
+    },
+    {
+      "id": 296,
+      "query": "zakariyah twin platform",
+      "judgments": 172,
+      "relevant": 170,
+      "candidate_recall": 0.6941176470588235,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 0.8491437320765757,
+          "judged_pool_ndcg10": 0.9408803699566423,
+          "judged_at10": 0.9,
+          "recall100": 0.5764705882352941
+        },
+        "semantic": {
+          "catalogue_ndcg10": 0.8967048973456863,
+          "judged_pool_ndcg10": 0.9408803699566423,
+          "judged_at10": 0.9,
+          "recall100": 0.4411764705882353
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 0.8577721221757447,
+          "judged_pool_ndcg10": 0.9235889866407062,
+          "judged_at10": 0.9,
+          "recall100": 0.5176470588235295
+        },
+        "learned": {
+          "catalogue_ndcg10": 0.8753790048117817,
+          "judged_pool_ndcg10": 0.9235889866407062,
+          "judged_at10": 0.9,
+          "recall100": 0.4588235294117647
+        }
+      }
+    },
+    {
+      "id": 303,
+      "query": "hawaii vintage art",
+      "judgments": 72,
+      "relevant": 66,
+      "candidate_recall": 0.6060606060606061,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 0.997681234552023,
+          "judged_pool_ndcg10": 0.997681234552023,
+          "judged_at10": 1.0,
+          "recall100": 0.5909090909090909
+        },
+        "semantic": {
+          "catalogue_ndcg10": 0.7611118702416827,
+          "judged_pool_ndcg10": 0.7611118702416827,
+          "judged_at10": 1.0,
+          "recall100": 0.5
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 0.9720629321112086,
+          "judged_pool_ndcg10": 0.9720629321112086,
+          "judged_at10": 1.0,
+          "recall100": 0.5606060606060606
+        },
+        "learned": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.5757575757575758
+        }
+      }
+    },
+    {
+      "id": 304,
+      "query": "merlyn 6",
+      "judgments": 759,
+      "relevant": 35,
+      "candidate_recall": 0.08571428571428572,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 0.0,
+          "judged_pool_ndcg10": 0.0,
+          "judged_at10": 0.2,
+          "recall100": 0.08571428571428572
+        },
+        "semantic": {
+          "catalogue_ndcg10": 0.0,
+          "judged_pool_ndcg10": 0.0,
+          "judged_at10": 0.0,
+          "recall100": 0.0
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 0.0,
+          "judged_pool_ndcg10": 0.0,
+          "judged_at10": 0.1,
+          "recall100": 0.05714285714285714
+        },
+        "learned": {
+          "catalogue_ndcg10": 0.0,
+          "judged_pool_ndcg10": 0.0,
+          "judged_at10": 0.1,
+          "recall100": 0.02857142857142857
+        }
+      }
+    },
+    {
+      "id": 307,
+      "query": "real touch roses floral arrangements in glass vase",
+      "judgments": 189,
+      "relevant": 173,
+      "candidate_recall": 0.6647398843930635,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 0.967153624883888,
+          "judged_pool_ndcg10": 0.967153624883888,
+          "judged_at10": 1.0,
+          "recall100": 0.5606936416184971
+        },
+        "semantic": {
+          "catalogue_ndcg10": 0.6795658465656893,
+          "judged_pool_ndcg10": 0.6795658465656893,
+          "judged_at10": 1.0,
+          "recall100": 0.5491329479768786
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 0.8075907563609164,
+          "judged_pool_ndcg10": 0.8075907563609164,
+          "judged_at10": 1.0,
+          "recall100": 0.5549132947976878
+        },
+        "learned": {
+          "catalogue_ndcg10": 0.9007397406198178,
+          "judged_pool_ndcg10": 0.9007397406198178,
+          "judged_at10": 1.0,
+          "recall100": 0.5606936416184971
+        }
+      }
+    },
+    {
+      "id": 310,
+      "query": "meade mirror",
+      "judgments": 589,
+      "relevant": 437,
+      "candidate_recall": 0.34324942791762014,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 0.9300782478108571,
+          "judged_pool_ndcg10": 0.9389563729919881,
+          "judged_at10": 0.9,
+          "recall100": 0.17620137299771166
+        },
+        "semantic": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.19679633867276888
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 0.9688593051675682,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 0.9,
+          "recall100": 0.19908466819221968
+        },
+        "learned": {
+          "catalogue_ndcg10": 0.9631513820196455,
+          "judged_pool_ndcg10": 0.9631513820196455,
+          "judged_at10": 1.0,
+          "recall100": 0.2242562929061785
+        }
+      }
+    },
+    {
+      "id": 317,
+      "query": "hulmeville writing desk with hutch",
+      "judgments": 340,
+      "relevant": 338,
+      "candidate_recall": 0.4230769230769231,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.2781065088757396
+        },
+        "semantic": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.28106508875739644
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.28106508875739644
+        },
+        "learned": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.28106508875739644
+        }
+      }
+    },
+    {
+      "id": 321,
+      "query": "hussain handmade tufted magenta rug",
+      "judgments": 297,
+      "relevant": 297,
+      "candidate_recall": 0.4511784511784512,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.3333333333333333
+        },
+        "semantic": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.2727272727272727
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.32996632996632996
+        },
+        "learned": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.2727272727272727
+        }
+      }
+    },
+    {
+      "id": 322,
+      "query": "cream queen duvet cover",
+      "judgments": 242,
+      "relevant": 241,
+      "candidate_recall": 0.6348547717842323,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.4149377593360996
+        },
+        "semantic": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.4066390041493776
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.4107883817427386
+        },
+        "learned": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.4066390041493776
+        }
+      }
+    },
+    {
+      "id": 324,
+      "query": "chase utility laundry cart",
+      "judgments": 113,
+      "relevant": 105,
+      "candidate_recall": 0.819047619047619,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.780952380952381
+        },
+        "semantic": {
+          "catalogue_ndcg10": 0.9558245273890439,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 0.9,
+          "recall100": 0.6476190476190476
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 0.9558245273890439,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 0.9,
+          "recall100": 0.7904761904761904
+        },
+        "learned": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.6571428571428571
+        }
+      }
+    },
+    {
+      "id": 325,
+      "query": "outdoor waterproof chest",
+      "judgments": 120,
+      "relevant": 86,
+      "candidate_recall": 0.19767441860465115,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 0.06749441069083542,
+          "judged_pool_ndcg10": 0.16407278625353577,
+          "judged_at10": 0.7,
+          "recall100": 0.1744186046511628
+        },
+        "semantic": {
+          "catalogue_ndcg10": 0.11004588314904008,
+          "judged_pool_ndcg10": 0.2578753740644927,
+          "judged_at10": 0.4,
+          "recall100": 0.05813953488372093
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 0.11004588314904008,
+          "judged_pool_ndcg10": 0.11004588314904008,
+          "judged_at10": 0.8,
+          "recall100": 0.13953488372093023
+        },
+        "learned": {
+          "catalogue_ndcg10": 0.1834650144788624,
+          "judged_pool_ndcg10": 0.24982635278875118,
+          "judged_at10": 0.8,
+          "recall100": 0.11627906976744186
+        }
+      }
+    },
+    {
+      "id": 328,
+      "query": "golub dining table",
+      "judgments": 661,
+      "relevant": 647,
+      "candidate_recall": 0.25193199381761977,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 0.8948763559161851,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 0.8,
+          "recall100": 0.12210200927357033
+        },
+        "semantic": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.1391035548686244
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.12828438948995363
+        },
+        "learned": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.13137557959814528
+        }
+      }
+    },
+    {
+      "id": 333,
+      "query": "stainless steel colander set",
+      "judgments": 315,
+      "relevant": 83,
+      "candidate_recall": 0.891566265060241,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 0.9510907186004267,
+          "judged_pool_ndcg10": 0.9510907186004267,
+          "judged_at10": 1.0,
+          "recall100": 0.8554216867469879
+        },
+        "semantic": {
+          "catalogue_ndcg10": 0.841610994396208,
+          "judged_pool_ndcg10": 0.841610994396208,
+          "judged_at10": 1.0,
+          "recall100": 0.8554216867469879
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.8795180722891566
+        },
+        "learned": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.8674698795180723
+        }
+      }
+    },
+    {
+      "id": 341,
+      "query": "canvas map art",
+      "judgments": 199,
+      "relevant": 199,
+      "candidate_recall": 0.5829145728643216,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.4623115577889447
+        },
+        "semantic": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.2864321608040201
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.4020100502512563
+        },
+        "learned": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.34673366834170855
+        }
+      }
+    },
+    {
+      "id": 375,
+      "query": "pastel pink desk chair",
+      "judgments": 215,
+      "relevant": 207,
+      "candidate_recall": 0.30434782608695654,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 0.2140837143698417,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 0.3,
+          "recall100": 0.2560386473429952
+        },
+        "semantic": {
+          "catalogue_ndcg10": 0.09478836436955079,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 0.1,
+          "recall100": 0.057971014492753624
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 0.4225749983705865,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 0.3,
+          "recall100": 0.1497584541062802
+        },
+        "learned": {
+          "catalogue_ndcg10": 0.45718160765461074,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 0.5,
+          "recall100": 0.13043478260869565
+        }
+      }
+    },
+    {
+      "id": 406,
+      "query": "refrigerator with ice an water in door",
+      "judgments": 98,
+      "relevant": 77,
+      "candidate_recall": 0.961038961038961,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 0.8842222191013388,
+          "judged_pool_ndcg10": 0.8842222191013388,
+          "judged_at10": 1.0,
+          "recall100": 0.948051948051948
+        },
+        "semantic": {
+          "catalogue_ndcg10": 0.4264120970358327,
+          "judged_pool_ndcg10": 0.4264120970358327,
+          "judged_at10": 1.0,
+          "recall100": 0.8961038961038961
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 0.5460635004263776,
+          "judged_pool_ndcg10": 0.5460635004263776,
+          "judged_at10": 1.0,
+          "recall100": 0.948051948051948
+        },
+        "learned": {
+          "catalogue_ndcg10": 0.7347014023042692,
+          "judged_pool_ndcg10": 0.7347014023042692,
+          "judged_at10": 1.0,
+          "recall100": 0.9090909090909091
+        }
+      }
+    },
+    {
+      "id": 408,
+      "query": "girl reading statue",
+      "judgments": 102,
+      "relevant": 102,
+      "candidate_recall": 0.7745098039215687,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 0.9074250374176304,
+          "judged_pool_ndcg10": 0.9074250374176304,
+          "judged_at10": 1.0,
+          "recall100": 0.6764705882352942
+        },
+        "semantic": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.7156862745098039
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 0.955830517697074,
+          "judged_pool_ndcg10": 0.955830517697074,
+          "judged_at10": 1.0,
+          "recall100": 0.7352941176470589
+        },
+        "learned": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.696078431372549
+        }
+      }
+    },
+    {
+      "id": 429,
+      "query": "gray dresser",
+      "judgments": 860,
+      "relevant": 513,
+      "candidate_recall": 0.30214424951267055,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 0.5172314361145776,
+          "judged_pool_ndcg10": 0.5172314361145776,
+          "judged_at10": 1.0,
+          "recall100": 0.17738791423001948
+        },
+        "semantic": {
+          "catalogue_ndcg10": 0.499272218015063,
+          "judged_pool_ndcg10": 0.499272218015063,
+          "judged_at10": 1.0,
+          "recall100": 0.15789473684210525
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 0.5686307721622641,
+          "judged_pool_ndcg10": 0.5686307721622641,
+          "judged_at10": 1.0,
+          "recall100": 0.16569200779727095
+        },
+        "learned": {
+          "catalogue_ndcg10": 0.571384317730928,
+          "judged_pool_ndcg10": 0.571384317730928,
+          "judged_at10": 1.0,
+          "recall100": 0.18323586744639375
+        }
+      }
+    },
+    {
+      "id": 431,
+      "query": "shoe bench entryway",
+      "judgments": 160,
+      "relevant": 154,
+      "candidate_recall": 0.6753246753246753,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 0.9432379215722527,
+          "judged_pool_ndcg10": 0.9432379215722527,
+          "judged_at10": 1.0,
+          "recall100": 0.5584415584415584
+        },
+        "semantic": {
+          "catalogue_ndcg10": 0.8302010829452637,
+          "judged_pool_ndcg10": 0.8302010829452637,
+          "judged_at10": 1.0,
+          "recall100": 0.44155844155844154
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 0.955830517697074,
+          "judged_pool_ndcg10": 0.955830517697074,
+          "judged_at10": 1.0,
+          "recall100": 0.538961038961039
+        },
+        "learned": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.5194805194805194
+        }
+      }
+    },
+    {
+      "id": 442,
+      "query": "above toilet cabinet",
+      "judgments": 1137,
+      "relevant": 409,
+      "candidate_recall": 0.26894865525672373,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 0.9537125187088151,
+          "judged_pool_ndcg10": 0.9537125187088151,
+          "judged_at10": 1.0,
+          "recall100": 0.17359413202933985
+        },
+        "semantic": {
+          "catalogue_ndcg10": 0.8506629589898831,
+          "judged_pool_ndcg10": 0.8506629589898831,
+          "judged_at10": 1.0,
+          "recall100": 0.1687041564792176
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 0.92663607790064,
+          "judged_pool_ndcg10": 0.92663607790064,
+          "judged_at10": 1.0,
+          "recall100": 0.2078239608801956
+        },
+        "learned": {
+          "catalogue_ndcg10": 0.8532721558012799,
+          "judged_pool_ndcg10": 0.8532721558012799,
+          "judged_at10": 1.0,
+          "recall100": 0.10024449877750612
+        }
+      }
+    },
+    {
+      "id": 449,
+      "query": "living room designs",
+      "judgments": 172,
+      "relevant": 165,
+      "candidate_recall": 0.296969696969697,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 0.1487639058405727,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 0.2,
+          "recall100": 0.21212121212121213
+        },
+        "semantic": {
+          "catalogue_ndcg10": 0.6594803070902429,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 0.6,
+          "recall100": 0.1393939393939394
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 0.6117952373568121,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 0.5,
+          "recall100": 0.1696969696969697
+        },
+        "learned": {
+          "catalogue_ndcg10": 0.2934163982736371,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 0.4,
+          "recall100": 0.1696969696969697
+        }
+      }
+    },
+    {
+      "id": 456,
+      "query": "wall design shelf",
+      "judgments": 238,
+      "relevant": 195,
+      "candidate_recall": 0.6256410256410256,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 0.4721957772068878,
+          "judged_pool_ndcg10": 0.6192265393558444,
+          "judged_at10": 1.0,
+          "recall100": 0.4
+        },
+        "semantic": {
+          "catalogue_ndcg10": 0.692287543504968,
+          "judged_pool_ndcg10": 0.6460000622137831,
+          "judged_at10": 1.0,
+          "recall100": 0.4153846153846154
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 0.7245949812329288,
+          "judged_pool_ndcg10": 0.7659543835545645,
+          "judged_at10": 1.0,
+          "recall100": 0.4358974358974359
+        },
+        "learned": {
+          "catalogue_ndcg10": 0.6321430404084751,
+          "judged_pool_ndcg10": 0.6714920520082945,
+          "judged_at10": 1.0,
+          "recall100": 0.4256410256410256
+        }
+      }
+    },
+    {
+      "id": 462,
+      "query": "large bases",
+      "judgments": 2,
+      "relevant": 1,
+      "candidate_recall": 1.0,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 0.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 0.0,
+          "recall100": 1.0
+        },
+        "semantic": {
+          "catalogue_ndcg10": 0.0,
+          "judged_pool_ndcg10": 0.6309297535714575,
+          "judged_at10": 0.0,
+          "recall100": 0.0
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 0.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 0.0,
+          "recall100": 1.0
+        },
+        "learned": {
+          "catalogue_ndcg10": 0.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 0.0,
+          "recall100": 0.0
+        }
+      }
+    },
+    {
+      "id": 468,
+      "query": "glow in the dark silent wall clock",
+      "judgments": 294,
+      "relevant": 284,
+      "candidate_recall": 0.5880281690140845,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 0.769269061948848,
+          "judged_pool_ndcg10": 0.769269061948848,
+          "judged_at10": 1.0,
+          "recall100": 0.33098591549295775
+        },
+        "semantic": {
+          "catalogue_ndcg10": 0.7069685094718972,
+          "judged_pool_ndcg10": 0.7069685094718972,
+          "judged_at10": 1.0,
+          "recall100": 0.3415492957746479
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 0.8603973473034903,
+          "judged_pool_ndcg10": 0.8603973473034903,
+          "judged_at10": 1.0,
+          "recall100": 0.33098591549295775
+        },
+        "learned": {
+          "catalogue_ndcg10": 0.8965528509418313,
+          "judged_pool_ndcg10": 0.8965528509418313,
+          "judged_at10": 1.0,
+          "recall100": 0.3380281690140845
+        }
+      }
+    },
+    {
+      "id": 474,
+      "query": "48 inch bathroom vanity with trough sink",
+      "judgments": 784,
+      "relevant": 709,
+      "candidate_recall": 0.23695345557122707,
+      "metrics": {
+        "bm25": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.13399153737658676
+        },
+        "semantic": {
+          "catalogue_ndcg10": 0.9305687780632229,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 0.9,
+          "recall100": 0.1311706629055007
+        },
+        "hybrid": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.13399153737658676
+        },
+        "learned": {
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
+          "judged_at10": 1.0,
+          "recall100": 0.12552891396332863
+        }
+      }
+    }
+  ],
+  "paired_delta_ci95": [
+    -0.0020782887316358857,
+    0.045037713256325405
+  ],
+  "candidate_recall": 0.5324632751805174,
+  "latency": {
+    "p50_ms": 41.04589799999303,
+    "p95_ms": 55.855100200278684,
+    "environment": "Local Linux CPU, ONNX Runtime, 2 inference threads. Includes uncached query encoding; excludes process/model startup and network.",
+    "samples": 72
+  },
+  "protocol": {
+    "primary": "NDCG@10 over all human-judged products for each held-out query (judged-pool reranking).",
+    "catalogue": "Full 42,994-product retrieval. Unjudged results receive zero gain, which can penalize genuinely relevant unjudged products. Interpret together with judged@10.",
+    "recall": "Recall@100 uses known Exact or Partial labels as positives. Candidate recall uses the union of two top-100 lists.",
+    "uncertainty": "Percentile bootstrap over held-out queries, 2,000 resamples, seed 42. Paired delta uses the same query pairs.",
+    "selection": "Only validation NDCG@10 selected the tree count. Test labels were read only by this evaluation script.",
+    "caveats": [
+      "Offline relevance does not establish conversion, revenue, or online A/B impact.",
+      "Only 480 source queries; some near-duplicate paraphrases may remain.",
+      "Products are shared across splits. The benchmark measures new-query generalization, not new-product or temporal generalization.",
+      "The encoder is pretrained and frozen; only the LambdaMART reranker is trained here.",
+      "Hybrid RRF is a candidate-generation baseline; its judged-pool ordering has many zero-score ties.",
+      "The paired learned-versus-BM25 judged-pool NDCG delta is not statistically conclusive at 95% for this test split.",
+      "Hybrid RRF has the highest observed full-catalogue NDCG@10 in this experiment. The learned model is not the strongest approach for every evaluation setting."
+    ]
+  },
+  "training": {
+    "seed": 42,
+    "dataset_revision": "3b74dcf4ba29ab8ff3e6a50b5b09fc627cb882b5",
+    "encoder": "Xenova/all-MiniLM-L6-v2",
+    "encoder_revision": "751bff37182d3f1213fa05d7196b954e230abad9",
+    "encoder_fine_tuned": false,
+    "product_count": 42994,
+    "query_count": 480,
+    "label_count": 233448,
+    "split_counts": {
+      "train": 336,
+      "validation": 72,
+      "test": 72
+    },
+    "training_pairs": 173876,
+    "validation_pairs": 33758,
+    "trees": 7,
+    "features": [
+      "bm25",
+      "cosine",
+      "title_coverage",
+      "category_coverage",
+      "body_coverage",
+      "title_phrase",
+      "title_precision",
+      "query_length",
+      "title_length",
+      "color_match",
+      "color_conflict",
+      "material_match",
+      "material_conflict",
+      "style_match",
+      "size_match",
+      "setting_match",
+      "numeric_coverage",
+      "rrf_score"
+    ],
+    "feature_importance": {
+      "bm25": 62.51105999946594,
+      "cosine": 219.10230493545532,
+      "title_coverage": 345.34824562072754,
+      "category_coverage": 268.70812129974365,
+      "body_coverage": 1748.4598865509033,
+      "title_phrase": 0.0,
+      "title_precision": 10.358499526977539,
+      "query_length": 6.997900009155273,
+      "title_length": 52.061739921569824,
+      "color_match": 0.0,
+      "color_conflict": 0.0,
+      "material_match": 0.0,
+      "material_conflict": 0.0,
+      "style_match": 0.0,
+      "size_match": 0.0,
+      "setting_match": 0.0,
+      "numeric_coverage": 0.0,
+      "rrf_score": 6871.4241189956665
+    },
+    "training_seconds": 56.88,
+    "gain": {
+      "Irrelevant": 0,
+      "Partial": 1,
+      "Exact": 2
+    },
+    "candidate_pool": "union of top 100 BM25 and top 100 dense candidates",
+    "split_policy": "near-duplicate query components (token Jaccard >= .75 or normalized string similarity >= .88), seed 42; 70/15/15 target"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "fastapi",
+  "buildCommand": "python scripts/bootstrap.py && npm ci --no-audit --no-fund && npm run build",
+  "functions": {
+    "app.py": {
+      "maxDuration": 60,
+      "excludeFiles": "{data/**,tests/**,docs/**,frontend/**,node_modules/**,.git/**,artifacts/query_embeddings.npy}"
+    }
+  }
+}

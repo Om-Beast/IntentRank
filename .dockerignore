@@ -1,0 +1,14 @@
+.git
+node_modules
+public
+data
+__pycache__
+.pytest_cache
+.venv
+.env*
+artifacts/encoder
+artifacts/*.npy
+artifacts/*.npz
+artifacts/catalogue.json.gz
+artifacts/vocabulary.json
+artifacts/query_embeddings.npy
