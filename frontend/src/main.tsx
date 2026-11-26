@@ -58,7 +58,7 @@ function App() {
   const previousFocus = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
-    fetch('/api/evaluation')
+    fetch('/api/evaluation', { cache: 'no-store' })
       .then((r) => {
         if (!r.ok) throw Error('Evaluation unavailable');
         return r.json();
