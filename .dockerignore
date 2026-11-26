@@ -12,3 +12,4 @@ artifacts/*.npz
 artifacts/catalogue.json.gz
 artifacts/vocabulary.json
 artifacts/query_embeddings.npy
+scripts/audit_data.py

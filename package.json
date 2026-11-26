@@ -8,7 +8,8 @@
     "dev": "python scripts/dev.py",
     "build": "tsc --noEmit && vite build",
     "check": "tsc --noEmit",
-    "dev:ui": "vite --host 0.0.0.0"
+    "dev:ui": "vite --host 0.0.0.0",
+    "format:check": "prettier --check frontend/src"
   },
   "dependencies": {
     "lucide-react": "^0.577.0",

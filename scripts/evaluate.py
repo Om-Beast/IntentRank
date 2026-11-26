@@ -11,7 +11,7 @@ import pandas as pd
 from intentrank.engine import SearchEngine
 from intentrank.metrics import ndcg, bootstrap_interval
 from intentrank.retrieval import top_k
-from scripts.train import GRADES
+from intentrank.judgments import GRADES, load_judgments
 
 ROOT = Path(__file__).resolve().parents[1]
 MODES = ('bm25', 'semantic', 'hybrid', 'learned')
@@ -23,7 +23,8 @@ def main():
     metadata = json.loads((out / 'training.json').read_text())
     splits = json.loads((out / 'splits.json').read_text())
     queries = pd.read_csv(ROOT / 'data/query.csv', sep='\t').to_dict('records')
-    labels = pd.read_csv(ROOT / 'data/label.csv', sep='\t')
+    canonical, audit = load_judgments(ROOT / 'data/label.csv')
+    labels = pd.DataFrame(canonical)
     row_for_id = {p['id']: i for i, p in enumerate(engine.products)}
     records, latency = [], []
     for query in queries:
@@ -76,10 +77,11 @@ def main():
               'protocol': {'primary': 'NDCG@10 over all human-judged products for each held-out query (judged-pool reranking).',
                            'catalogue': 'Full 42,994-product retrieval. Unjudged results receive zero gain, which can penalize genuinely relevant unjudged products. Interpret together with judged@10.',
                            'recall': 'Recall@100 uses known Exact or Partial labels as positives. Candidate recall uses the union of two top-100 lists.',
+                           'judgments': audit['policy'],
                            'uncertainty': 'Percentile bootstrap over held-out queries, 2,000 resamples, seed 42. Paired delta uses the same query pairs.',
-                           'selection': 'Only validation NDCG@10 selected the tree count. Test labels were read only by this evaluation script.',
-                           'caveats': ['Offline relevance does not establish conversion, revenue, or online A/B impact.', 'Only 480 source queries; some near-duplicate paraphrases may remain.', 'Products are shared across splits. The benchmark measures new-query generalization, not new-product or temporal generalization.', 'The encoder is pretrained and frozen; only the LambdaMART reranker is trained here.', 'Hybrid RRF is a candidate-generation baseline; its judged-pool ordering has many zero-score ties.']},
-              'training': metadata}
+                           'selection': 'Only validation NDCG@10 selected the tree count. Test judgments do not enter model fitting or early stopping.',
+                           'caveats': ['Offline relevance does not establish conversion, revenue, or online A/B impact.', 'Only 480 source queries; some near-duplicate paraphrases may remain.', 'Products are shared across splits. The benchmark measures new-query generalization, not new-product or temporal generalization.', 'The encoder is pretrained and frozen; only the LambdaMART reranker is trained here.', 'Hybrid RRF is a candidate-generation baseline; its judged-pool ordering has many zero-score ties.', 'The paired learned-versus-BM25 judged-pool NDCG delta is not statistically conclusive at 95% for this test split.', 'Hybrid RRF has the highest observed full-catalogue NDCG@10. The learned model is not the strongest approach for every evaluation setting.']},
+              'training': metadata, 'judgment_audit': audit}
     (out / 'evaluation.json').write_text(json.dumps(result, indent=2))
     print(json.dumps({'test_queries': len(records), 'models': summary, 'latency': result['latency'], 'paired_delta_ci95': result['paired_delta_ci95']}, indent=2))
 

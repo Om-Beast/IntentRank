@@ -1,5 +1,5 @@
 :root {
-  font-family: "DM Sans", sans-serif;
+  font-family: 'DM Sans', sans-serif;
   color: #27362f;
   background: #fafbf8;
   font-synthesis: none;
@@ -240,7 +240,7 @@ input::placeholder {
   overflow: hidden;
 }
 .sidebar-note:after {
-  content: "";
+  content: '';
   position: absolute;
   width: 100px;
   height: 100px;
@@ -254,7 +254,7 @@ input::placeholder {
   color: #607341;
 }
 .sidebar-note h3 {
-  font-family: "Instrument Serif", serif;
+  font-family: 'Instrument Serif', serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 1.1;
@@ -397,7 +397,7 @@ main {
 }
 .hero h1,
 .page-intro h1 {
-  font-family: "Instrument Serif", serif;
+  font-family: 'Instrument Serif', serif;
   font-size: 55px;
   font-weight: 400;
   line-height: 1.02;
@@ -476,7 +476,7 @@ main {
 }
 .art-card-front > span {
   display: block;
-  font-family: "Instrument Serif", serif;
+  font-family: 'Instrument Serif', serif;
   color: #516b42;
   font-size: 20px;
   margin-top: 10px;
@@ -693,7 +693,7 @@ main {
 }
 .section-heading h2 {
   font-size: 23px;
-  font-family: "Instrument Serif", serif;
+  font-family: 'Instrument Serif', serif;
   font-weight: 400;
   margin-top: 7px;
   letter-spacing: -0.2px;
@@ -1051,7 +1051,7 @@ main {
 }
 .research-banner h3 {
   font-size: 21px;
-  font-family: "Instrument Serif", serif;
+  font-family: 'Instrument Serif', serif;
   font-weight: 400;
   letter-spacing: -0.2px;
   margin: 6px 0;
@@ -1166,7 +1166,7 @@ main {
 .error-state h3,
 .loading-state h3,
 .empty-state h3 {
-  font-family: "Instrument Serif", serif;
+  font-family: 'Instrument Serif', serif;
   font-weight: 400;
   font-size: 27px;
   margin: 15px 0 10px;
@@ -1250,7 +1250,7 @@ main {
 }
 .metric-cards strong {
   display: block;
-  font-family: "Instrument Serif", serif;
+  font-family: 'Instrument Serif', serif;
   font-size: 46px;
   font-weight: 400;
   margin: 13px 0 5px;
@@ -1284,7 +1284,7 @@ main {
   margin-bottom: 24px;
 }
 .panel h2 {
-  font-family: "Instrument Serif", serif;
+  font-family: 'Instrument Serif', serif;
   font-weight: 400;
   font-size: 26px;
   letter-spacing: -0.2px;
@@ -1366,7 +1366,7 @@ main {
 }
 .ci-mark:before,
 .ci-mark:after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   top: -3px;
@@ -1429,13 +1429,13 @@ main {
   gap: 7px;
 }
 .latency-numbers strong {
-  font-family: "Instrument Serif", serif;
+  font-family: 'Instrument Serif', serif;
   font-size: 36px;
   font-weight: 400;
   color: #6e8658;
 }
 .latency-numbers strong small {
-  font-family: "DM Sans", sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 12px;
   color: #a5b295;
 }
@@ -1533,7 +1533,7 @@ main {
   margin-top: 4px;
 }
 .methodology h3 {
-  font-family: "Instrument Serif", serif;
+  font-family: 'Instrument Serif', serif;
   color: #6f875a;
   font-size: 24px;
   font-weight: 400;
@@ -1583,12 +1583,12 @@ main {
   position: absolute;
   top: 22px;
   right: 20px;
-  font-family: "Instrument Serif", serif;
+  font-family: 'Instrument Serif', serif;
   font-size: 30px;
   color: #d7dfcb;
 }
 .architecture-steps h3 {
-  font-family: "Instrument Serif", serif;
+  font-family: 'Instrument Serif', serif;
   font-size: 24px;
   font-weight: 400;
   color: #6b8453;
@@ -1757,7 +1757,7 @@ main {
   padding: 29px;
 }
 .drawer-body h2 {
-  font-family: "Instrument Serif", serif;
+  font-family: 'Instrument Serif', serif;
   font-size: 33px;
   font-weight: 400;
   color: #5c7747;
@@ -1788,7 +1788,7 @@ main {
   margin-bottom: 7px;
 }
 .score-grid strong {
-  font-family: "Instrument Serif", serif;
+  font-family: 'Instrument Serif', serif;
   font-size: 25px;
   font-weight: 400;
   color: #78965e;

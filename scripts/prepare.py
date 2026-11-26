@@ -41,6 +41,9 @@ def main():
             if i % 2048 == 0:
                 print(f'Encoded {min(i + 256, len(texts))}/{len(texts)} products in {time.perf_counter()-started:.0f}s', flush=True)
         np.save(out / 'embeddings.npy', np.concatenate(vectors))
+    with (ROOT / 'data/query.csv').open(encoding='utf-8', newline='') as f:
+        suggestions = [q['query'] for q in csv.DictReader(f, delimiter='\t')]
+    (out / 'suggestions.json').write_text(json.dumps(suggestions))
     print('Catalogue ready', len(products), flush=True)
 
 

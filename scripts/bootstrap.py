@@ -19,10 +19,14 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--verify-only', action='store_true', help='Verify an already-built runtime without downloading or rebuilding inputs')
     parser.add_argument('--train', action='store_true', help='Fit on train queries, select on validation, evaluate once on test')
     args = parser.parse_args()
-    download()
-    prepare()
+    if args.train and args.verify_only:
+        parser.error('--train and --verify-only cannot be combined')
+    if not args.verify_only:
+        download()
+        prepare()
     if args.train:
         subprocess.run([sys.executable, '-u', 'scripts/train.py'], cwd=ROOT, check=True)
         subprocess.run([sys.executable, '-u', 'scripts/evaluate.py'], cwd=ROOT, check=True)
@@ -30,9 +34,8 @@ def main():
     for filename in ('ranker.json', 'training.json', 'evaluation.json', 'splits.json', 'parity.json'):
         if not (out / filename).exists():
             raise RuntimeError(f'Missing {filename}. Run bootstrap.py --train, or use a checkout with the trained model committed.')
-    with (ROOT / 'data/query.csv').open(encoding='utf-8', newline='') as f:
-        queries = [row['query'] for row in csv.DictReader(f, delimiter='\t')]
-    (out / 'suggestions.json').write_text(json.dumps(queries))
+    if not (out / 'suggestions.json').exists():
+        raise RuntimeError('Missing query suggestions. Run scripts/prepare.py first.')
     fixture = json.loads((out / 'parity.json').read_text())
     model = TreeRanker(json.loads((out / 'ranker.json').read_text()))
     np.testing.assert_allclose(model.predict(np.array(fixture['features'])), fixture['scores'], rtol=1e-5, atol=1e-6)

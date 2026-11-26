@@ -45,7 +45,7 @@ def health():
 
 @app.get('/api/evaluation')
 def evaluation(response: Response):
-    response.headers['Cache-Control'] = 'public, max-age=3600'
+    response.headers['Cache-Control'] = 'no-cache'
     path = ARTIFACTS / 'evaluation.json'
     if not path.exists():
         raise HTTPException(503, 'Evaluation report has not been generated.')

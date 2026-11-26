@@ -67,3 +67,42 @@ def test_exported_tree_predictions_match_lightgbm_fixture():
     model = TreeRanker(json.loads((root / 'ranker.json').read_text()))
     fixture = json.loads((root / 'parity.json').read_text())
     np.testing.assert_allclose(model.predict(np.array(fixture['features'])), fixture['scores'], rtol=1e-5, atol=1e-6)
+
+
+def test_encoder_pooling_ignores_nonzero_padded_states():
+    from types import SimpleNamespace
+    from intentrank.encoder import Encoder
+
+    # This known-answer fixture catches unmasked pooling even if padding has
+    # large, nonzero hidden states. The expected normalized mean is [3, 4]/5.
+    class TokenizerFixture:
+        def encode_batch(self, texts):
+            return [SimpleNamespace(ids=[1, 2, 0], attention_mask=[1, 1, 0], type_ids=[0, 0, 0])]
+
+    class SessionFixture:
+        def run(self, output_names, feeds):
+            return [np.array([[[2., 2.], [4., 6.], [1000., 1000.]]], dtype=np.float32)]
+
+    encoder = Encoder.__new__(Encoder)
+    encoder.tokenizer = TokenizerFixture()
+    encoder.session = SessionFixture()
+    encoder.inputs = {'input_ids', 'attention_mask', 'token_type_ids'}
+    np.testing.assert_allclose(encoder.encode(['fixture']), [[.6, .8]], atol=1e-6)
+
+
+def test_duplicate_judgments_do_not_weight_pairs_or_invent_consensus():
+    from intentrank.judgments import canonicalize
+    rows = [
+        {'query_id': 1, 'product_id': 1, 'label': 'Exact'},
+        {'query_id': 1, 'product_id': 1, 'label': 'Exact'},
+        {'query_id': 1, 'product_id': 2, 'label': 'Partial'},
+        {'query_id': 1, 'product_id': 2, 'label': 'Exact'},
+        {'query_id': 2, 'product_id': 1, 'label': 'Irrelevant'},
+    ]
+    clean, report = canonicalize(rows)
+    assert [(r['query_id'], r['product_id'], r['grade']) for r in clean] == [(1, 1, 2), (2, 1, 0)]
+    assert report['duplicate_extra_rows'] == 2
+    assert report['conflicting_pairs_excluded'] == 1
+    assert canonicalize(list(reversed(rows))) == (clean, report)
+    with pytest.raises(ValueError, match='Unknown relevance'):
+        canonicalize([{'query_id': 1, 'product_id': 1, 'label': 'invented'}])

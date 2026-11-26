@@ -18,6 +18,8 @@ Queries form connected groups when normalized token Jaccard is at least 0.75 or 
 
 All catalogue products appear in the retrieval index, including products judged against test queries. This is intentional new-query evaluation. It is not product-held-out or temporal evaluation. Judgments from training queries alone fit the ranker. Validation NDCG@10 selects the number of boosting iterations. Test labels are not used for feature selection, fitting, or early stopping.
 
+Repeated identical judgments are collapsed into one query-product pair. All 14 pairs with conflicting labels are excluded, leaving 231,859 canonical pairs. No majority vote is inferred from duplicated rows. This shared policy is applied before training and evaluation. The source audit also records 2,852 missing product classes and 6,008 missing descriptions. Query IDs are not contiguous.
+
 ## Evaluation
 
 See `artifacts/evaluation.json` for actual aggregate and per-query results, bootstrap intervals, and local CPU latency. The primary metric is judged-pool NDCG@10, ranking all annotated products for each test query. This isolates reranking quality in a fully judged candidate set and is not a full-catalogue retrieval metric.

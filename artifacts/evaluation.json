@@ -10,10 +10,10 @@
         ]
       },
       "judged_pool_ndcg10": {
-        "mean": 0.7786683199938336,
+        "mean": 0.780122612734872,
         "ci95": [
-          0.71682244545831,
-          0.8381762157210016
+          0.7185450476855573,
+          0.8396145902029359
         ]
       },
       "judged_at10": {
@@ -24,10 +24,10 @@
         ]
       },
       "recall100": {
-        "mean": 0.42521213700833205,
+        "mean": 0.4250488996281055,
         "ci95": [
-          0.3629168766423209,
-          0.4902573302466687
+          0.3627536627065766,
+          0.4900883577248327
         ]
       }
     },
@@ -40,10 +40,10 @@
         ]
       },
       "judged_pool_ndcg10": {
-        "mean": 0.7689940887411388,
+        "mean": 0.7706385142513208,
         "ci95": [
-          0.7126880672521736,
-          0.8274588531227459
+          0.7144698724254489,
+          0.8286697898199835
         ]
       },
       "judged_at10": {
@@ -54,10 +54,10 @@
         ]
       },
       "recall100": {
-        "mean": 0.37112426354770534,
+        "mean": 0.3710679612937144,
         "ci95": [
-          0.31124314909375483,
-          0.4331296748984482
+          0.3112551728531848,
+          0.43286216551245177
         ]
       }
     },
@@ -70,10 +70,10 @@
         ]
       },
       "judged_pool_ndcg10": {
-        "mean": 0.7961193382361181,
+        "mean": 0.7988099135141375,
         "ci95": [
-          0.7388425531242412,
-          0.8528341072723256
+          0.7420093341188563,
+          0.8539207580277226
         ]
       },
       "judged_at10": {
@@ -84,40 +84,40 @@
         ]
       },
       "recall100": {
-        "mean": 0.42612145667069756,
+        "mean": 0.42609769400813624,
         "ci95": [
-          0.36467947555173424,
-          0.4910790499561572
+          0.3646085135272499,
+          0.49123873135614016
         ]
       }
     },
     "learned": {
       "catalogue_ndcg10": {
-        "mean": 0.6910478637019077,
+        "mean": 0.6853503115147148,
         "ci95": [
-          0.6229181810707649,
-          0.7627416064115965
+          0.6174872152815017,
+          0.7567628483188602
         ]
       },
       "judged_pool_ndcg10": {
-        "mean": 0.7994945956935291,
+        "mean": 0.803382994870192,
         "ci95": [
-          0.7425817721253672,
-          0.8555388460374638
+          0.7484800266264405,
+          0.8580737098356562
         ]
       },
       "judged_at10": {
-        "mean": 0.8305555555555555,
+        "mean": 0.8152777777777778,
         "ci95": [
-          0.7666319444444445,
-          0.8861111111111111
+          0.7499652777777778,
+          0.8736111111111111
         ]
       },
       "recall100": {
-        "mean": 0.3663206494506739,
+        "mean": 0.3735588544387444,
         "ci95": [
-          0.3106074927090073,
-          0.4246844889018343
+          0.3184103229913564,
+          0.43266329491766264
         ]
       }
     }
@@ -150,16 +150,16 @@
         },
         "learned": {
           "catalogue_ndcg10": 0.44484632057266277,
-          "judged_pool_ndcg10": 0.5002289288634465,
+          "judged_pool_ndcg10": 0.5255664792793981,
           "judged_at10": 0.7,
-          "recall100": 0.06417489421720733
+          "recall100": 0.06346967559943582
         }
       }
     },
     {
       "id": 6,
       "query": "acrylic clear chair",
-      "judgments": 111,
+      "judgments": 109,
       "relevant": 99,
       "candidate_recall": 0.36363636363636365,
       "metrics": {
@@ -215,10 +215,10 @@
           "recall100": 0.03564608529598982
         },
         "learned": {
-          "catalogue_ndcg10": 0.3333333333333333,
+          "catalogue_ndcg10": 0.2805302824771658,
           "judged_pool_ndcg10": 0.3333333333333333,
-          "judged_at10": 1.0,
-          "recall100": 0.05919796308084023
+          "judged_at10": 0.8,
+          "recall100": 0.05537873965626989
         }
       }
     },
@@ -248,10 +248,10 @@
           "recall100": 0.16387959866220736
         },
         "learned": {
-          "catalogue_ndcg10": 0.799768656391611,
-          "judged_pool_ndcg10": 0.799768656391611,
+          "catalogue_ndcg10": 0.8383354523103075,
+          "judged_pool_ndcg10": 0.8383354523103075,
           "judged_at10": 1.0,
-          "recall100": 0.1505016722408027
+          "recall100": 0.15551839464882944
         }
       }
     },
@@ -281,10 +281,10 @@
           "recall100": 0.14661654135338345
         },
         "learned": {
-          "catalogue_ndcg10": 0.3675554499392686,
-          "judged_pool_ndcg10": 0.6005540286277393,
-          "judged_at10": 0.5,
-          "recall100": 0.13533834586466165
+          "catalogue_ndcg10": 0.2716259212306027,
+          "judged_pool_ndcg10": 0.470018260101859,
+          "judged_at10": 0.6,
+          "recall100": 0.12781954887218044
         }
       }
     },
@@ -317,7 +317,7 @@
           "catalogue_ndcg10": 0.5750338134581173,
           "judged_pool_ndcg10": 0.7680587924239461,
           "judged_at10": 0.7,
-          "recall100": 0.44660194174757284
+          "recall100": 0.42718446601941745
         }
       }
     },
@@ -347,17 +347,17 @@
           "recall100": 0.2857142857142857
         },
         "learned": {
-          "catalogue_ndcg10": 0.304266277145995,
-          "judged_pool_ndcg10": 0.531062264504017,
-          "judged_at10": 0.6,
-          "recall100": 0.29081632653061223
+          "catalogue_ndcg10": 0.16699108911642058,
+          "judged_pool_ndcg10": 0.4419956486386029,
+          "judged_at10": 0.5,
+          "recall100": 0.2857142857142857
         }
       }
     },
     {
       "id": 23,
       "query": "stoneford end tables white and wood",
-      "judgments": 1267,
+      "judgments": 1266,
       "relevant": 1228,
       "candidate_recall": 0.14169381107491857,
       "metrics": {
@@ -413,10 +413,10 @@
           "recall100": 0.2619047619047619
         },
         "learned": {
-          "catalogue_ndcg10": 0.36279792468536937,
+          "catalogue_ndcg10": 0.42861478915033074,
           "judged_pool_ndcg10": 0.6943559465628248,
-          "judged_at10": 0.4,
-          "recall100": 0.22023809523809523
+          "judged_at10": 0.5,
+          "recall100": 0.20833333333333334
         }
       }
     },
@@ -449,7 +449,7 @@
           "catalogue_ndcg10": 0.5005962147771917,
           "judged_pool_ndcg10": 0.9368077570869662,
           "judged_at10": 0.4,
-          "recall100": 0.10340136054421768
+          "recall100": 0.11020408163265306
         }
       }
     },
@@ -479,10 +479,10 @@
           "recall100": 0.4941860465116279
         },
         "learned": {
-          "catalogue_ndcg10": 0.3333333333333333,
-          "judged_pool_ndcg10": 0.3333333333333333,
+          "catalogue_ndcg10": 0.37574719213263447,
+          "judged_pool_ndcg10": 0.37574719213263447,
           "judged_at10": 1.0,
-          "recall100": 0.47093023255813954
+          "recall100": 0.47674418604651164
         }
       }
     },
@@ -512,10 +512,10 @@
           "recall100": 0.4551282051282051
         },
         "learned": {
-          "catalogue_ndcg10": 0.6927609676105795,
-          "judged_pool_ndcg10": 0.9368077570869662,
+          "catalogue_ndcg10": 0.7175867104101136,
+          "judged_pool_ndcg10": 0.92663607790064,
           "judged_at10": 0.7,
-          "recall100": 0.42948717948717946
+          "recall100": 0.4423076923076923
         }
       }
     },
@@ -545,10 +545,10 @@
           "recall100": 0.5875
         },
         "learned": {
-          "catalogue_ndcg10": 0.535861797760324,
-          "judged_pool_ndcg10": 0.535861797760324,
+          "catalogue_ndcg10": 0.5423572203605963,
+          "judged_pool_ndcg10": 0.5423572203605963,
           "judged_at10": 1.0,
-          "recall100": 0.475
+          "recall100": 0.4875
         }
       }
     },
@@ -578,10 +578,10 @@
           "recall100": 0.41333333333333333
         },
         "learned": {
-          "catalogue_ndcg10": 0.40378522920659876,
-          "judged_pool_ndcg10": 0.5451623409976973,
-          "judged_at10": 0.5,
-          "recall100": 0.22666666666666666
+          "catalogue_ndcg10": 0.43797213172140753,
+          "judged_pool_ndcg10": 0.5109754384828886,
+          "judged_at10": 0.6,
+          "recall100": 0.41333333333333333
         }
       }
     },
@@ -614,7 +614,7 @@
           "catalogue_ndcg10": 0.9537125187088151,
           "judged_pool_ndcg10": 0.9537125187088151,
           "judged_at10": 1.0,
-          "recall100": 0.08277830637488107
+          "recall100": 0.07611798287345385
         }
       }
     },
@@ -644,10 +644,10 @@
           "recall100": 0.1724137931034483
         },
         "learned": {
-          "catalogue_ndcg10": 0.8454256604216018,
+          "catalogue_ndcg10": 0.9148568823583791,
           "judged_pool_ndcg10": 1.0,
-          "judged_at10": 0.8,
-          "recall100": 0.1724137931034483
+          "judged_at10": 0.9,
+          "recall100": 0.1896551724137931
         }
       }
     },
@@ -680,7 +680,7 @@
           "catalogue_ndcg10": 0.9235889866407062,
           "judged_pool_ndcg10": 1.0,
           "judged_at10": 0.9,
-          "recall100": 0.2631578947368421
+          "recall100": 0.24736842105263157
         }
       }
     },
@@ -710,10 +710,10 @@
           "recall100": 0.5272727272727272
         },
         "learned": {
-          "catalogue_ndcg10": 0.23487955863552573,
-          "judged_pool_ndcg10": 0.3637333660241454,
+          "catalogue_ndcg10": 0.23259032126058063,
+          "judged_pool_ndcg10": 0.3222360606442349,
           "judged_at10": 0.8,
-          "recall100": 0.4909090909090909
+          "recall100": 0.4727272727272727
         }
       }
     },
@@ -812,7 +812,7 @@
           "catalogue_ndcg10": 1.0,
           "judged_pool_ndcg10": 1.0,
           "judged_at10": 1.0,
-          "recall100": 0.7132352941176471
+          "recall100": 0.7279411764705882
         }
       }
     },
@@ -875,10 +875,10 @@
           "recall100": 0.27089337175792505
         },
         "learned": {
-          "catalogue_ndcg10": 1.0,
+          "catalogue_ndcg10": 0.4225749983705865,
           "judged_pool_ndcg10": 1.0,
-          "judged_at10": 1.0,
-          "recall100": 0.2507204610951009
+          "judged_at10": 0.3,
+          "recall100": 0.2478386167146974
         }
       }
     },
@@ -911,7 +911,7 @@
           "catalogue_ndcg10": 0.9368077570869662,
           "judged_pool_ndcg10": 0.9368077570869662,
           "judged_at10": 1.0,
-          "recall100": 0.23809523809523808
+          "recall100": 0.2275132275132275
         }
       }
     },
@@ -941,10 +941,10 @@
           "recall100": 0.12380952380952381
         },
         "learned": {
-          "catalogue_ndcg10": 0.7859162856301585,
+          "catalogue_ndcg10": 0.7151857987862357,
           "judged_pool_ndcg10": 1.0,
-          "judged_at10": 0.7,
-          "recall100": 0.07142857142857142
+          "judged_at10": 0.6,
+          "recall100": 0.05952380952380952
         }
       }
     },
@@ -1007,10 +1007,10 @@
           "recall100": 0.11515151515151516
         },
         "learned": {
-          "catalogue_ndcg10": 0.7084409501232901,
+          "catalogue_ndcg10": 0.47890155528769296,
           "judged_pool_ndcg10": 1.0,
-          "judged_at10": 0.6,
-          "recall100": 0.17575757575757575
+          "judged_at10": 0.4,
+          "recall100": 0.16363636363636364
         }
       }
     },
@@ -1043,7 +1043,7 @@
           "catalogue_ndcg10": 0.8701249883466592,
           "judged_pool_ndcg10": 1.0,
           "judged_at10": 0.8,
-          "recall100": 0.5163398692810458
+          "recall100": 0.477124183006536
         }
       }
     },
@@ -1073,10 +1073,10 @@
           "recall100": 0.704
         },
         "learned": {
-          "catalogue_ndcg10": 0.603862808347509,
-          "judged_pool_ndcg10": 0.603862808347509,
+          "catalogue_ndcg10": 0.6722366133771266,
+          "judged_pool_ndcg10": 0.6722366133771266,
           "judged_at10": 1.0,
-          "recall100": 0.672
+          "recall100": 0.688
         }
       }
     },
@@ -1106,17 +1106,17 @@
           "recall100": 0.16
         },
         "learned": {
-          "catalogue_ndcg10": 0.25959718857040825,
-          "judged_pool_ndcg10": 0.5655735358146146,
+          "catalogue_ndcg10": 0.37228687854532033,
+          "judged_pool_ndcg10": 0.567284995507698,
           "judged_at10": 0.4,
-          "recall100": 0.18666666666666668
+          "recall100": 0.21333333333333335
         }
       }
     },
     {
       "id": 163,
       "query": "dual monitor stand",
-      "judgments": 96,
+      "judgments": 94,
       "relevant": 93,
       "candidate_recall": 0.7849462365591398,
       "metrics": {
@@ -1139,17 +1139,17 @@
           "recall100": 0.7849462365591398
         },
         "learned": {
-          "catalogue_ndcg10": 0.9510907186004267,
-          "judged_pool_ndcg10": 0.9510907186004267,
+          "catalogue_ndcg10": 0.955830517697074,
+          "judged_pool_ndcg10": 0.955830517697074,
           "judged_at10": 1.0,
-          "recall100": 0.6129032258064516
+          "recall100": 0.7634408602150538
         }
       }
     },
     {
       "id": 166,
       "query": "feather wall art",
-      "judgments": 112,
+      "judgments": 111,
       "relevant": 109,
       "candidate_recall": 0.47706422018348627,
       "metrics": {
@@ -1172,17 +1172,17 @@
           "recall100": 0.3486238532110092
         },
         "learned": {
-          "catalogue_ndcg10": 0.5779050396291793,
-          "judged_pool_ndcg10": 1.0,
-          "judged_at10": 0.6,
-          "recall100": 0.30275229357798167
+          "catalogue_ndcg10": 0.9575861412006988,
+          "judged_pool_ndcg10": 0.9575861412006988,
+          "judged_at10": 1.0,
+          "recall100": 0.3211009174311927
         }
       }
     },
     {
       "id": 170,
       "query": "zen",
-      "judgments": 128,
+      "judgments": 127,
       "relevant": 100,
       "candidate_recall": 0.96,
       "metrics": {
@@ -1208,7 +1208,7 @@
           "catalogue_ndcg10": 0.9216017310213247,
           "judged_pool_ndcg10": 0.9216017310213247,
           "judged_at10": 1.0,
-          "recall100": 0.91
+          "recall100": 0.84
         }
       }
     },
@@ -1241,7 +1241,7 @@
           "catalogue_ndcg10": 0.4066972554326934,
           "judged_pool_ndcg10": 0.4066972554326934,
           "judged_at10": 1.0,
-          "recall100": 0.8679245283018868
+          "recall100": 0.8113207547169812
         }
       }
     },
@@ -1274,7 +1274,7 @@
           "catalogue_ndcg10": 1.0,
           "judged_pool_ndcg10": 1.0,
           "judged_at10": 1.0,
-          "recall100": 0.782608695652174
+          "recall100": 0.8043478260869565
         }
       }
     },
@@ -1304,10 +1304,10 @@
           "recall100": 0.7745098039215687
         },
         "learned": {
-          "catalogue_ndcg10": 0.6593007041766438,
-          "judged_pool_ndcg10": 0.6593007041766438,
+          "catalogue_ndcg10": 0.5917067769668569,
+          "judged_pool_ndcg10": 0.5917067769668569,
           "judged_at10": 1.0,
-          "recall100": 0.6176470588235294
+          "recall100": 0.5882352941176471
         }
       }
     },
@@ -1340,14 +1340,14 @@
           "catalogue_ndcg10": 1.0,
           "judged_pool_ndcg10": 1.0,
           "judged_at10": 1.0,
-          "recall100": 0.23324396782841822
+          "recall100": 0.24128686327077747
         }
       }
     },
     {
       "id": 200,
       "query": "ceramic tile sea shell",
-      "judgments": 248,
+      "judgments": 247,
       "relevant": 244,
       "candidate_recall": 0.45901639344262296,
       "metrics": {
@@ -1370,43 +1370,43 @@
           "recall100": 0.28688524590163933
         },
         "learned": {
-          "catalogue_ndcg10": 0.7794238198714823,
-          "judged_pool_ndcg10": 0.7824219794061805,
-          "judged_at10": 0.9,
-          "recall100": 0.3155737704918033
+          "catalogue_ndcg10": 0.74196880013454,
+          "judged_pool_ndcg10": 0.8152500403307822,
+          "judged_at10": 0.8,
+          "recall100": 0.319672131147541
         }
       }
     },
     {
       "id": 213,
       "query": "kraus kitchen sink faucet oletto kpf 2820 sfs",
-      "judgments": 491,
+      "judgments": 271,
       "relevant": 139,
       "candidate_recall": 0.5035971223021583,
       "metrics": {
         "bm25": {
           "catalogue_ndcg10": 0.4329684610382273,
-          "judged_pool_ndcg10": 0.317789548585336,
+          "judged_pool_ndcg10": 0.5695293880890642,
           "judged_at10": 0.9,
           "recall100": 0.4316546762589928
         },
         "semantic": {
           "catalogue_ndcg10": 0.2979766981608318,
-          "judged_pool_ndcg10": 0.2912114951989254,
+          "judged_pool_ndcg10": 0.36332265064084,
           "judged_at10": 0.8,
           "recall100": 0.302158273381295
         },
         "hybrid": {
           "catalogue_ndcg10": 0.42609332204176276,
-          "judged_pool_ndcg10": 0.3800893080013055,
+          "judged_pool_ndcg10": 0.6151701303403404,
           "judged_at10": 0.8,
           "recall100": 0.35251798561151076
         },
         "learned": {
-          "catalogue_ndcg10": 0.45518337912525003,
-          "judged_pool_ndcg10": 0.4529774113367827,
+          "catalogue_ndcg10": 0.5711759842142993,
+          "judged_pool_ndcg10": 0.6471642354372976,
           "judged_at10": 0.8,
-          "recall100": 0.33093525179856115
+          "recall100": 0.3381294964028777
         }
       }
     },
@@ -1436,76 +1436,76 @@
           "recall100": 0.3230769230769231
         },
         "learned": {
-          "catalogue_ndcg10": 0.06943122193677728,
+          "catalogue_ndcg10": 0.0,
           "judged_pool_ndcg10": 1.0,
-          "judged_at10": 0.1,
-          "recall100": 0.23076923076923078
+          "judged_at10": 0.0,
+          "recall100": 0.2
         }
       }
     },
     {
       "id": 243,
       "query": "indoor multi tiered plant stand",
-      "judgments": 211,
-      "relevant": 195,
-      "candidate_recall": 0.6102564102564103,
+      "judgments": 209,
+      "relevant": 194,
+      "candidate_recall": 0.6082474226804123,
       "metrics": {
         "bm25": {
           "catalogue_ndcg10": 0.914856882358379,
           "judged_pool_ndcg10": 1.0,
           "judged_at10": 0.9,
-          "recall100": 0.5076923076923077
+          "recall100": 0.5051546391752577
         },
         "semantic": {
           "catalogue_ndcg10": 1.0,
           "judged_pool_ndcg10": 1.0,
           "judged_at10": 1.0,
-          "recall100": 0.4512820512820513
+          "recall100": 0.4484536082474227
         },
         "hybrid": {
           "catalogue_ndcg10": 0.933745776545611,
           "judged_pool_ndcg10": 1.0,
           "judged_at10": 0.9,
-          "recall100": 0.47692307692307695
+          "recall100": 0.4742268041237113
         },
         "learned": {
           "catalogue_ndcg10": 0.914856882358379,
           "judged_pool_ndcg10": 1.0,
           "judged_at10": 0.9,
-          "recall100": 0.48205128205128206
+          "recall100": 0.4742268041237113
         }
       }
     },
     {
       "id": 246,
       "query": "clear shower curtain",
-      "judgments": 254,
-      "relevant": 126,
-      "candidate_recall": 0.7301587301587301,
+      "judgments": 252,
+      "relevant": 125,
+      "candidate_recall": 0.728,
       "metrics": {
         "bm25": {
           "catalogue_ndcg10": 0.6087519422192817,
           "judged_pool_ndcg10": 0.6087519422192817,
           "judged_at10": 1.0,
-          "recall100": 0.35714285714285715
+          "recall100": 0.352
         },
         "semantic": {
           "catalogue_ndcg10": 0.6655266239440208,
           "judged_pool_ndcg10": 0.6655266239440208,
           "judged_at10": 1.0,
-          "recall100": 0.5873015873015873
+          "recall100": 0.592
         },
         "hybrid": {
           "catalogue_ndcg10": 0.7448559741076546,
           "judged_pool_ndcg10": 0.7448559741076546,
           "judged_at10": 1.0,
-          "recall100": 0.5396825396825397
+          "recall100": 0.544
         },
         "learned": {
-          "catalogue_ndcg10": 0.5789170894259248,
-          "judged_pool_ndcg10": 0.5789170894259248,
+          "catalogue_ndcg10": 0.6213309482252259,
+          "judged_pool_ndcg10": 0.6213309482252259,
           "judged_at10": 1.0,
-          "recall100": 0.48412698412698413
+          "recall100": 0.496
         }
       }
     },
@@ -1535,8 +1535,8 @@
           "recall100": 0.6413043478260869
         },
         "learned": {
-          "catalogue_ndcg10": 0.5591227842996137,
-          "judged_pool_ndcg10": 0.5591227842996137,
+          "catalogue_ndcg10": 0.6603598929788996,
+          "judged_pool_ndcg10": 0.6603598929788996,
           "judged_at10": 1.0,
           "recall100": 0.6304347826086957
         }
@@ -1568,10 +1568,10 @@
           "recall100": 0.7402597402597403
         },
         "learned": {
-          "catalogue_ndcg10": 0.4377903828266175,
-          "judged_pool_ndcg10": 0.4377903828266175,
+          "catalogue_ndcg10": 0.4353478413426545,
+          "judged_pool_ndcg10": 0.4353478413426545,
           "judged_at10": 1.0,
-          "recall100": 0.38961038961038963
+          "recall100": 0.42857142857142855
         }
       }
     },
@@ -1637,7 +1637,7 @@
           "catalogue_ndcg10": 0.33103009269557726,
           "judged_pool_ndcg10": 0.38441023776109734,
           "judged_at10": 0.9,
-          "recall100": 0.5739130434782609
+          "recall100": 0.5826086956521739
         }
       }
     },
@@ -1677,40 +1677,40 @@
     {
       "id": 293,
       "query": "wood floor protector mat",
-      "judgments": 106,
-      "relevant": 74,
-      "candidate_recall": 0.7972972972972973,
+      "judgments": 102,
+      "relevant": 73,
+      "candidate_recall": 0.7945205479452054,
       "metrics": {
         "bm25": {
           "catalogue_ndcg10": 0.42772299709002704,
           "judged_pool_ndcg10": 0.45298473672387823,
           "judged_at10": 0.9,
-          "recall100": 0.7027027027027027
+          "recall100": 0.6986301369863014
         },
         "semantic": {
           "catalogue_ndcg10": 0.6859758966916486,
           "judged_pool_ndcg10": 0.6859758966916486,
           "judged_at10": 1.0,
-          "recall100": 0.5675675675675675
+          "recall100": 0.5616438356164384
         },
         "hybrid": {
           "catalogue_ndcg10": 0.5147934117931416,
           "judged_pool_ndcg10": 0.5864017103888768,
           "judged_at10": 0.9,
-          "recall100": 0.7567567567567568
+          "recall100": 0.7534246575342466
         },
         "learned": {
           "catalogue_ndcg10": 0.527059975094682,
-          "judged_pool_ndcg10": 0.5710642923977509,
+          "judged_pool_ndcg10": 0.6134781511970521,
           "judged_at10": 0.9,
-          "recall100": 0.3783783783783784
+          "recall100": 0.6027397260273972
         }
       }
     },
     {
       "id": 296,
       "query": "zakariyah twin platform",
-      "judgments": 172,
+      "judgments": 171,
       "relevant": 170,
       "candidate_recall": 0.6941176470588235,
       "metrics": {
@@ -1733,10 +1733,10 @@
           "recall100": 0.5176470588235295
         },
         "learned": {
-          "catalogue_ndcg10": 0.8753790048117817,
+          "catalogue_ndcg10": 0.8377631718771894,
           "judged_pool_ndcg10": 0.9235889866407062,
           "judged_at10": 0.9,
-          "recall100": 0.4588235294117647
+          "recall100": 0.4823529411764706
         }
       }
     },
@@ -1769,7 +1769,7 @@
           "catalogue_ndcg10": 1.0,
           "judged_pool_ndcg10": 1.0,
           "judged_at10": 1.0,
-          "recall100": 0.5757575757575758
+          "recall100": 0.5151515151515151
         }
       }
     },
@@ -1832,10 +1832,10 @@
           "recall100": 0.5549132947976878
         },
         "learned": {
-          "catalogue_ndcg10": 0.9007397406198178,
-          "judged_pool_ndcg10": 0.9007397406198178,
+          "catalogue_ndcg10": 0.9650079626826101,
+          "judged_pool_ndcg10": 0.9650079626826101,
           "judged_at10": 1.0,
-          "recall100": 0.5606936416184971
+          "recall100": 0.5549132947976878
         }
       }
     },
@@ -1865,10 +1865,10 @@
           "recall100": 0.19908466819221968
         },
         "learned": {
-          "catalogue_ndcg10": 0.9631513820196455,
-          "judged_pool_ndcg10": 0.9631513820196455,
+          "catalogue_ndcg10": 1.0,
+          "judged_pool_ndcg10": 1.0,
           "judged_at10": 1.0,
-          "recall100": 0.2242562929061785
+          "recall100": 0.22654462242562928
         }
       }
     },
@@ -1934,7 +1934,7 @@
           "catalogue_ndcg10": 1.0,
           "judged_pool_ndcg10": 1.0,
           "judged_at10": 1.0,
-          "recall100": 0.2727272727272727
+          "recall100": 0.2962962962962963
         }
       }
     },
@@ -1997,10 +1997,10 @@
           "recall100": 0.7904761904761904
         },
         "learned": {
-          "catalogue_ndcg10": 1.0,
+          "catalogue_ndcg10": 0.9539959859595428,
           "judged_pool_ndcg10": 1.0,
-          "judged_at10": 1.0,
-          "recall100": 0.6571428571428571
+          "judged_at10": 0.9,
+          "recall100": 0.7523809523809524
         }
       }
     },
@@ -2030,17 +2030,17 @@
           "recall100": 0.13953488372093023
         },
         "learned": {
-          "catalogue_ndcg10": 0.1834650144788624,
-          "judged_pool_ndcg10": 0.24982635278875118,
+          "catalogue_ndcg10": 0.20167716124945967,
+          "judged_pool_ndcg10": 0.3191822984454325,
           "judged_at10": 0.8,
-          "recall100": 0.11627906976744186
+          "recall100": 0.08139534883720931
         }
       }
     },
     {
       "id": 328,
       "query": "golub dining table",
-      "judgments": 661,
+      "judgments": 659,
       "relevant": 647,
       "candidate_recall": 0.25193199381761977,
       "metrics": {
@@ -2063,10 +2063,10 @@
           "recall100": 0.12828438948995363
         },
         "learned": {
-          "catalogue_ndcg10": 1.0,
+          "catalogue_ndcg10": 0.8100330523317734,
           "judged_pool_ndcg10": 1.0,
-          "judged_at10": 1.0,
-          "recall100": 0.13137557959814528
+          "judged_at10": 0.7,
+          "recall100": 0.12828438948995363
         }
       }
     },
@@ -2132,14 +2132,14 @@
           "catalogue_ndcg10": 1.0,
           "judged_pool_ndcg10": 1.0,
           "judged_at10": 1.0,
-          "recall100": 0.34673366834170855
+          "recall100": 0.35678391959798994
         }
       }
     },
     {
       "id": 375,
       "query": "pastel pink desk chair",
-      "judgments": 215,
+      "judgments": 211,
       "relevant": 207,
       "candidate_recall": 0.30434782608695654,
       "metrics": {
@@ -2162,10 +2162,10 @@
           "recall100": 0.1497584541062802
         },
         "learned": {
-          "catalogue_ndcg10": 0.45718160765461074,
+          "catalogue_ndcg10": 0.44903378752009254,
           "judged_pool_ndcg10": 1.0,
           "judged_at10": 0.5,
-          "recall100": 0.13043478260869565
+          "recall100": 0.12560386473429952
         }
       }
     },
@@ -2195,10 +2195,10 @@
           "recall100": 0.948051948051948
         },
         "learned": {
-          "catalogue_ndcg10": 0.7347014023042692,
-          "judged_pool_ndcg10": 0.7347014023042692,
+          "catalogue_ndcg10": 0.5778535469153314,
+          "judged_pool_ndcg10": 0.5778535469153314,
           "judged_at10": 1.0,
-          "recall100": 0.9090909090909091
+          "recall100": 0.922077922077922
         }
       }
     },
@@ -2261,10 +2261,10 @@
           "recall100": 0.16569200779727095
         },
         "learned": {
-          "catalogue_ndcg10": 0.571384317730928,
-          "judged_pool_ndcg10": 0.571384317730928,
+          "catalogue_ndcg10": 0.5687625176225395,
+          "judged_pool_ndcg10": 0.5687625176225395,
           "judged_at10": 1.0,
-          "recall100": 0.18323586744639375
+          "recall100": 0.1793372319688109
         }
       }
     },
@@ -2297,7 +2297,7 @@
           "catalogue_ndcg10": 1.0,
           "judged_pool_ndcg10": 1.0,
           "judged_at10": 1.0,
-          "recall100": 0.5194805194805194
+          "recall100": 0.512987012987013
         }
       }
     },
@@ -2327,10 +2327,10 @@
           "recall100": 0.2078239608801956
         },
         "learned": {
-          "catalogue_ndcg10": 0.8532721558012799,
-          "judged_pool_ndcg10": 0.8532721558012799,
+          "catalogue_ndcg10": 0.9074250374176304,
+          "judged_pool_ndcg10": 0.9074250374176304,
           "judged_at10": 1.0,
-          "recall100": 0.10024449877750612
+          "recall100": 0.1295843520782396
         }
       }
     },
@@ -2360,42 +2360,42 @@
           "recall100": 0.1696969696969697
         },
         "learned": {
-          "catalogue_ndcg10": 0.2934163982736371,
+          "catalogue_ndcg10": 0.3792377156012898,
           "judged_pool_ndcg10": 1.0,
-          "judged_at10": 0.4,
-          "recall100": 0.1696969696969697
+          "judged_at10": 0.5,
+          "recall100": 0.17575757575757575
         }
       }
     },
     {
       "id": 456,
       "query": "wall design shelf",
-      "judgments": 238,
+      "judgments": 221,
       "relevant": 195,
       "candidate_recall": 0.6256410256410256,
       "metrics": {
         "bm25": {
           "catalogue_ndcg10": 0.4721957772068878,
-          "judged_pool_ndcg10": 0.6192265393558444,
+          "judged_pool_ndcg10": 0.4721957772068878,
           "judged_at10": 1.0,
           "recall100": 0.4
         },
         "semantic": {
           "catalogue_ndcg10": 0.692287543504968,
-          "judged_pool_ndcg10": 0.6460000622137831,
+          "judged_pool_ndcg10": 0.692287543504968,
           "judged_at10": 1.0,
           "recall100": 0.4153846153846154
         },
         "hybrid": {
           "catalogue_ndcg10": 0.7245949812329288,
-          "judged_pool_ndcg10": 0.7659543835545645,
+          "judged_pool_ndcg10": 0.7245949812329288,
           "judged_at10": 1.0,
           "recall100": 0.4358974358974359
         },
         "learned": {
-          "catalogue_ndcg10": 0.6321430404084751,
-          "judged_pool_ndcg10": 0.6714920520082945,
-          "judged_at10": 1.0,
+          "catalogue_ndcg10": 0.625527563958621,
+          "judged_pool_ndcg10": 0.6891483521575726,
+          "judged_at10": 0.9,
           "recall100": 0.4256410256410256
         }
       }
@@ -2459,8 +2459,8 @@
           "recall100": 0.33098591549295775
         },
         "learned": {
-          "catalogue_ndcg10": 0.8965528509418313,
-          "judged_pool_ndcg10": 0.8965528509418313,
+          "catalogue_ndcg10": 0.9108954758022453,
+          "judged_pool_ndcg10": 0.9108954758022453,
           "judged_at10": 1.0,
           "recall100": 0.3380281690140845
         }
@@ -2501,13 +2501,13 @@
     }
   ],
   "paired_delta_ci95": [
-    -0.0020782887316358857,
-    0.045037713256325405
+    -0.0033427216949096007,
+    0.050511128233853606
   ],
-  "candidate_recall": 0.5324632751805174,
+  "candidate_recall": 0.532366824248756,
   "latency": {
-    "p50_ms": 41.04589799999303,
-    "p95_ms": 55.855100200278684,
+    "p50_ms": 38.69889850011532,
+    "p95_ms": 58.47829609997462,
     "environment": "Local Linux CPU, ONNX Runtime, 2 inference threads. Includes uncached query encoding; excludes process/model startup and network.",
     "samples": 72
   },
@@ -2516,7 +2516,7 @@
     "catalogue": "Full 42,994-product retrieval. Unjudged results receive zero gain, which can penalize genuinely relevant unjudged products. Interpret together with judged@10.",
     "recall": "Recall@100 uses known Exact or Partial labels as positives. Candidate recall uses the union of two top-100 lists.",
     "uncertainty": "Percentile bootstrap over held-out queries, 2,000 resamples, seed 42. Paired delta uses the same query pairs.",
-    "selection": "Only validation NDCG@10 selected the tree count. Test labels were read only by this evaluation script.",
+    "selection": "Only validation NDCG@10 selected the tree count. Test judgments do not enter model fitting or early stopping.",
     "caveats": [
       "Offline relevance does not establish conversion, revenue, or online A/B impact.",
       "Only 480 source queries; some near-duplicate paraphrases may remain.",
@@ -2524,8 +2524,9 @@
       "The encoder is pretrained and frozen; only the LambdaMART reranker is trained here.",
       "Hybrid RRF is a candidate-generation baseline; its judged-pool ordering has many zero-score ties.",
       "The paired learned-versus-BM25 judged-pool NDCG delta is not statistically conclusive at 95% for this test split.",
-      "Hybrid RRF has the highest observed full-catalogue NDCG@10 in this experiment. The learned model is not the strongest approach for every evaluation setting."
-    ]
+      "Hybrid RRF has the highest observed full-catalogue NDCG@10. The learned model is not the strongest approach for every evaluation setting."
+    ],
+    "judgments": "Collapse repeated identical query-product judgments. Exclude pairs with conflicting labels rather than inventing a consensus. Apply before fitting or scoring."
   },
   "training": {
     "seed": 42,
@@ -2536,13 +2537,22 @@
     "product_count": 42994,
     "query_count": 480,
     "label_count": 233448,
+    "canonical_pair_count": 231859,
+    "judgment_audit": {
+      "raw_rows": 233448,
+      "unique_pairs_before_conflict_filter": 231873,
+      "duplicate_extra_rows": 1575,
+      "conflicting_pairs_excluded": 14,
+      "canonical_pairs": 231859,
+      "policy": "Collapse repeated identical query-product judgments. Exclude pairs with conflicting labels rather than inventing a consensus. Apply before fitting or scoring."
+    },
     "split_counts": {
       "train": 336,
       "validation": 72,
       "test": 72
     },
-    "training_pairs": 173876,
-    "validation_pairs": 33758,
+    "training_pairs": 172769,
+    "validation_pairs": 33536,
     "trees": 7,
     "features": [
       "bm25",
@@ -2565,15 +2575,15 @@
       "rrf_score"
     ],
     "feature_importance": {
-      "bm25": 62.51105999946594,
-      "cosine": 219.10230493545532,
-      "title_coverage": 345.34824562072754,
-      "category_coverage": 268.70812129974365,
-      "body_coverage": 1748.4598865509033,
+      "bm25": 105.92479991912842,
+      "cosine": 201.13608694076538,
+      "title_coverage": 321.10807609558105,
+      "category_coverage": 245.9788589477539,
+      "body_coverage": 1775.7073378562927,
       "title_phrase": 0.0,
-      "title_precision": 10.358499526977539,
-      "query_length": 6.997900009155273,
-      "title_length": 52.061739921569824,
+      "title_precision": 10.588600158691406,
+      "query_length": 10.62440013885498,
+      "title_length": 60.32488965988159,
       "color_match": 0.0,
       "color_conflict": 0.0,
       "material_match": 0.0,
@@ -2582,9 +2592,9 @@
       "size_match": 0.0,
       "setting_match": 0.0,
       "numeric_coverage": 0.0,
-      "rrf_score": 6871.4241189956665
+      "rrf_score": 6833.1002678871155
     },
-    "training_seconds": 56.88,
+    "training_seconds": 47.05,
     "gain": {
       "Irrelevant": 0,
       "Partial": 1,
@@ -2592,5 +2602,13 @@
     },
     "candidate_pool": "union of top 100 BM25 and top 100 dense candidates",
     "split_policy": "near-duplicate query components (token Jaccard >= .75 or normalized string similarity >= .88), seed 42; 70/15/15 target"
+  },
+  "judgment_audit": {
+    "raw_rows": 233448,
+    "unique_pairs_before_conflict_filter": 231873,
+    "duplicate_extra_rows": 1575,
+    "conflicting_pairs_excluded": 14,
+    "canonical_pairs": 231859,
+    "policy": "Collapse repeated identical query-product judgments. Exclude pairs with conflicting labels rather than inventing a consensus. Apply before fitting or scoring."
   }
 }

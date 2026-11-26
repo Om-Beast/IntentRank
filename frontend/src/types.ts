@@ -1,4 +1,4 @@
-export type Mode = "learned" | "bm25" | "semantic" | "hybrid";
+export type Mode = 'learned' | 'bm25' | 'semantic' | 'hybrid';
 export type Product = {
   id: number;
   name: string;
@@ -38,6 +38,13 @@ export type QueryRecord = {
   metrics: Record<Mode, Record<string, number>>;
 };
 export type Evaluation = {
+  judgment_audit?: {
+    raw_rows: number;
+    canonical_pairs: number;
+    duplicate_extra_rows: number;
+    conflicting_pairs_excluded: number;
+    policy: string;
+  };
   test_queries: number;
   models: Record<Mode, Record<string, Metric>>;
   queries: QueryRecord[];

@@ -25,7 +25,7 @@ flowchart TD
 
 ## Boundaries
 
-`text.py`, `features.py`, and `retrieval.py` are shared by training and serving. Labels are read by the training and evaluation scripts, never by `SearchEngine`. The query's human-assigned `query_class` is never an input feature. Ratings are displayed as catalogue metadata and are not a ranking feature.
+`text.py`, `features.py`, and `retrieval.py` are shared by training and serving. Judgments are canonicalized by `judgments.py`, collapsing consistent duplicates and excluding conflicts. Labels are read by the training and evaluation scripts, never by `SearchEngine`. The query's human-assigned `query_class` is never an input feature. Ratings are displayed as catalogue metadata and are not a ranking feature.
 
 The runtime performs inference only. The bootstrap script downloads public immutable inputs and builds the catalogue index and embeddings before serving traffic. The trained reranker and evaluation report are committed. A deployment rebuild does not silently retrain or inspect test labels to tune the model.
 

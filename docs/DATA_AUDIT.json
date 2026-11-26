@@ -1,0 +1,39 @@
+{
+  "pinned_data_checksums_verified": true,
+  "judgment_canonicalization": {
+    "raw_rows": 233448,
+    "unique_pairs_before_conflict_filter": 231873,
+    "duplicate_extra_rows": 1575,
+    "conflicting_pairs_excluded": 14,
+    "canonical_pairs": 231859,
+    "policy": "Collapse repeated identical query-product judgments. Exclude pairs with conflicting labels rather than inventing a consensus. Apply before fitting or scoring."
+  },
+  "products": 42994,
+  "queries": 480,
+  "judgments": 233448,
+  "unique_product_ids": 42994,
+  "unique_query_ids": 480,
+  "duplicate_query_product_pairs": 1575,
+  "unknown_query_ids": [],
+  "unknown_product_ids": [],
+  "labels": {
+    "Partial": 146633,
+    "Irrelevant": 61201,
+    "Exact": 25614
+  },
+  "missing_product_classes": 2852,
+  "missing_product_descriptions": 6008,
+  "query_id_min": 0,
+  "query_id_max": 487,
+  "note": "Query IDs are source identifiers and are not assumed contiguous.",
+  "canonical_split_pairs": {
+    "train": 172769,
+    "validation": 33536,
+    "test": 25554
+  },
+  "raw_split_judgments": {
+    "train": 173876,
+    "validation": 33758,
+    "test": 25814
+  }
+}

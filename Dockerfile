@@ -6,6 +6,17 @@ COPY vite.config.js tsconfig.json ./
 COPY frontend ./frontend
 RUN npm run build
 
+# Catalogue preparation is independent of the fitted ranker and UI. New model
+# weights can be shipped without recomputing 42,994 transformer embeddings.
+FROM python:3.12-slim AS index
+ENV PYTHONUNBUFFERED=1 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=2
+WORKDIR /app
+COPY requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
+COPY intentrank/__init__.py intentrank/encoder.py intentrank/text.py intentrank/retrieval.py ./intentrank/
+COPY scripts/download.py scripts/prepare.py ./scripts/
+RUN python scripts/download.py && python scripts/prepare.py
+
 FROM python:3.12-slim AS runtime
 ENV PYTHONUNBUFFERED=1 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=2 PORT=10000
 WORKDIR /app
@@ -14,8 +25,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY intentrank ./intentrank
 COPY scripts ./scripts
 COPY artifacts ./artifacts
+COPY --from=index /app/artifacts ./artifacts
 COPY app.py ./
-RUN python scripts/bootstrap.py && rm -rf data /root/.cache
+RUN python scripts/bootstrap.py --verify-only
 COPY --from=frontend /build/public ./public
 RUN useradd --create-home --uid 10001 appuser
 USER appuser

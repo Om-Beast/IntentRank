@@ -1,5 +1,7 @@
 # IntentRank
 
+[Live search lab](https://intentrank.onrender.com) · [Evaluation report](artifacts/evaluation.json) · [Interview walkthrough](docs/INTERVIEW_GUIDE.md)
+
 **Search, understood.** An interactive, reproducible e-commerce relevance lab built on Wayfair's real WANDS dataset.
 
 Compare keyword search, frozen transformer retrieval, hybrid rank fusion, and a trained LambdaMART reranker across **42,994 products**. Inspect what changed, read the text evidence, and check the evaluation behind each claim.
@@ -9,7 +11,7 @@ Compare keyword search, frozen transformer retrieval, hybrid rank fusion, and a 
 ## What is actually implemented
 
 - BM25 inverted index with deterministic ties and exact cosine retrieval using a pinned quantized MiniLM encoder.
-- A supervised LightGBM LambdaMART model trained on **173,876** human-judged training pairs. The encoder is frozen; it is not presented as a fine-tuned model.
+- A supervised LightGBM LambdaMART model trained on **172,769** human-judged training pairs. The encoder is frozen; it is not presented as a fine-tuned model.
 - Eighteen label-free query/product features shared across training, evaluation, and serving, including coverage and attribute evidence.
 - Near-duplicate query grouping, explicit train/validation/test IDs, validation-only early stopping, bootstrap confidence intervals, and all per-query test results.
 - A responsive React/TypeScript search lab with four ranking modes, side-by-side comparison, real product evidence, category filtering, JSON exports, and an evaluation dashboard.
@@ -17,20 +19,22 @@ Compare keyword search, frozen transformer retrieval, hybrid rank fusion, and a 
 
 ## Results
 
+A source audit found 1,575 repeated extra judgment rows and 14 conflicting query-product pairs. Identical pairs are collapsed and conflicts are excluded before fitting or scoring. The resulting benchmark uses 231,859 canonical pairs; raw source-row counts are preserved for attribution.
+
 A 336/72/72 query split is grouped before assignment. Products are shared across partitions, so this measures new-query generalization, not unseen products or temporal drift.
 
 | Approach | Judged-pool NDCG@10 | Full-catalogue NDCG@10* |
 | --- | ---: | ---: |
-| BM25 | 0.7787 | 0.6689 |
-| Frozen MiniLM | 0.7690 | 0.6851 |
-| Hybrid RRF | 0.7961 | **0.7275** |
-| Trained LambdaMART | **0.7995** | 0.6910 |
+| BM25 | 0.7801 | 0.6689 |
+| Frozen MiniLM | 0.7706 | 0.6851 |
+| Hybrid RRF | 0.7988 | **0.7275** |
+| Trained LambdaMART | **0.8034** | 0.6854 |
 
 *Unjudged retrieved products get zero gain in full-catalogue NDCG. Read this alongside judgment coverage.*
 
-The learned reranker is 2.7% higher than BM25 on judged-pool NDCG, but its paired 95% bootstrap interval crosses zero. Hybrid RRF leads full-catalogue NDCG in this experiment. This project preserves both findings rather than claiming every added model is an improvement. [Full results and error analysis](docs/RESULTS.md).
+The learned reranker is 3.0% higher than BM25 on judged-pool NDCG, but its paired 95% bootstrap interval crosses zero. Hybrid RRF leads full-catalogue NDCG in this experiment. This project preserves both findings rather than claiming every added model is an improvement. [Full results and error analysis](docs/RESULTS.md).
 
-The local CPU run measured 41 ms p50 / 56 ms p95 over 72 uncached queries, excluding model startup and network. These are local engine measurements, not production SLAs.
+The local CPU run measured 39 ms p50 / 58 ms p95 over 72 uncached queries, excluding model startup and network. These are local engine measurements, not production SLAs.
 
 ## Reproduce the experiment
 
@@ -43,6 +47,7 @@ python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements-dev.txt
 python scripts/bootstrap.py --train
+python scripts/audit_data.py
 npm ci
 npm run build
 python -m pytest -q
@@ -54,6 +59,8 @@ On Windows PowerShell, activate with `.venv\Scripts\Activate.ps1`. Open `http://
 To serve the committed model without retraining, install `requirements.txt` and run `python scripts/bootstrap.py` without `--train`. Training libraries are deliberately separate from runtime dependencies. The model, splits, parity fixture, and evaluation are committed. Raw data, encoder weights, postings, and embeddings are rebuilt from pinned public sources and are not committed.
 
 For UI development, run the API on port 8000 and `npm run dev:ui` in another terminal. Vite proxies `/api` to the local backend. `npm run dev` serves the already-built UI and API together.
+
+Unit checks run on the committed model fixture. Full integration checks are enabled when runtime artifacts have been built; they exercise the actual ONNX encoder and API. The [source-data audit](docs/DATA_AUDIT.json) checks identity uniqueness and judgment references.
 
 ## API
 
@@ -80,7 +87,7 @@ Search modes are `bm25`, `semantic`, `hybrid`, and `learned`. Query length is ca
 | `frontend/src/` | React search workspace, evaluation, and model views |
 | `tests/` | Ranking math, split isolation, feature contract, prediction parity, API bounds |
 
-[Architecture and tradeoffs](docs/ARCHITECTURE.md) · [Model card](docs/MODEL_CARD.md) · [Results](docs/RESULTS.md)
+[Architecture and tradeoffs](docs/ARCHITECTURE.md) · [Model card](docs/MODEL_CARD.md) · [Results](docs/RESULTS.md) · [Interview walkthrough](docs/INTERVIEW_GUIDE.md)
 
 ## Deployment
 

@@ -15,9 +15,9 @@ from intentrank.features import FeatureExtractor, FEATURE_NAMES
 from intentrank.retrieval import BM25, reciprocal_rank_fusion
 from intentrank.splitting import split_queries
 from scripts.download import WANDS_REVISION
+from intentrank.judgments import GRADES, load_judgments
 
 ROOT = Path(__file__).resolve().parents[1]
-GRADES = {'Irrelevant': 0, 'Partial': 1, 'Exact': 2}
 
 
 def main():
@@ -27,10 +27,8 @@ def main():
         products = json.load(f)
     row_for_id = {p['id']: row for row, p in enumerate(products)}
     queries = pd.read_csv(ROOT / 'data/query.csv', sep='\t').to_dict('records')
-    labels = pd.read_csv(ROOT / 'data/label.csv', sep='\t')
-    labels['grade'] = labels['label'].map(GRADES)
-    if labels['grade'].isna().any():
-        raise ValueError('Unexpected relevance grade')
+    canonical, audit = load_judgments(ROOT / 'data/label.csv')
+    labels = pd.DataFrame(canonical)
     splits = split_queries(queries)
     (out / 'splits.json').write_text(json.dumps(splits, indent=2))
     vectors = np.load(out / 'embeddings.npy', mmap_mode='r')
@@ -71,7 +69,8 @@ def main():
     (out / 'parity.json').write_text(json.dumps({'features': fixture_x.tolist(), 'scores': model.predict(fixture_x).tolist()}))
     metadata = {'seed': 42, 'dataset_revision': WANDS_REVISION, 'encoder': MODEL_ID,
                 'encoder_revision': MODEL_REVISION, 'encoder_fine_tuned': False,
-                'product_count': len(products), 'query_count': len(queries), 'label_count': len(labels),
+                'product_count': len(products), 'query_count': len(queries), 'label_count': audit['raw_rows'],
+                'canonical_pair_count': len(labels), 'judgment_audit': audit,
                 'split_counts': {k: len(v) for k, v in splits.items()},
                 'training_pairs': len(grades['train']), 'validation_pairs': len(grades['validation']),
                 'trees': model.best_iteration_, 'features': FEATURE_NAMES,
